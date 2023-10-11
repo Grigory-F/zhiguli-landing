@@ -1,0 +1,26 @@
+<header class="header">
+  <div class="container-xxl">
+    <div class="header__container">
+      <a href="header__logo">
+        <img src="./images/logo.svg" alt="">
+      </a>
+      <nav class="header-nav">
+        <ul>
+          <li><a href="#portfolio">работы</a></li>
+          <li><a href="#we-develop">услуги</a></li>
+          <li><a href="#we-develop">о нас</a></li>
+          <li><a href="#contacts">контакты</a></li>
+          <li><a href="#" data-bs-toggle="modal" data-bs-target="#formModal" style="color: #1BACE4 !important">заявка</a></li>
+        </ul>
+      </nav>
+      <div class="header__burger header-burger">
+        <div class="header-burger__open-icon">
+          @@include('./sprite.html', { 'id': 'burger-close', 'width': '53px', 'height':'13px' })
+        </div>
+        <div class="header-burger__close-icon">
+          @@include('./sprite.html', { 'id': 'burger-open', 'width': '35px', 'height': '35px' })
+        </div>
+      </div>
+    </div>
+  </div>
+</header>
