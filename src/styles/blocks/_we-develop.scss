@@ -49,7 +49,7 @@
 
 @media (max-width: 992px) {
     .we-develop-block {
-        min-height: 400px;
+        min-height: auto;
         height: auto;
         &__layout {
             padding: 15px 31px 28px 28px;
@@ -59,6 +59,15 @@
             justify-content: space-between;
             align-items: end;
             gap: 20px;
+        }
+        &__budge-list {
+            display: flex;
+            gap: 10px;
+            flex-wrap: wrap;
+        }
+        &__subtitle {
+            font-size: 18px;
+            margin-bottom: 15px;
         }
     }
 }

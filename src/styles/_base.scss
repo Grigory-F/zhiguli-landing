@@ -38,6 +38,12 @@ section {
 
 }
 
+
+#portfolio:before {
+    margin-top: 0px;
+    height: 0px;
+}
+
 .animate__delay-1s {
     animation-delay: 1s;
 }

@@ -43,3 +43,15 @@
         }
     }
 }
+
+.portfolio-block .bounce-block__wrapper--content img {
+    width: 101%;
+    height: 101%;
+}
+
+@media (max-width: 480px) {
+    .portfolio-block {height: 360px;}
+    .portfolio-block__title-btn {
+        font-size: 44px;
+    }
+}
