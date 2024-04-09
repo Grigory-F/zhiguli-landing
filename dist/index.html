@@ -4,497 +4,844 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width,initial-scale=1">
-  <script src="https://api-maps.yandex.ru/2.1/?apikey=b345f0b0-60da-47eb-8188-9ee58f8dcfc3&amp;lang=ru_RU&_v=20231014124150"></script>
-  <link rel="stylesheet" href="css/style.min.css?_v=20231014124150">
-  <title>Главная</title>
+  <script src="https://api-maps.yandex.ru/2.1/?apikey=b345f0b0-60da-47eb-8188-9ee58f8dcfc3&amp;lang=ru_RU&_v=20240409203034"></script>
+  <link rel="stylesheet" href="css/style.min.css?_v=20240409203034">
+  <link rel="icon" href="./images/favicon.svg">
+  <title>СИРИУС - ОТРАСЛЕВАЯ ЦИФРОВАЯ ПЛАТФОРМА АРЕНДЫ ТРАСПНОРТА РОССИИ. CRM ДЛЯ АВТОПРОКАТА.</title>
 </head>
 
   <body class="page">
-    <header class="header">
-  <div class="container-xxl">
-    <div class="header__container">
-      <a href="header__logo">
-        <img src="./images/logo.svg" alt="">
-      </a>
-      <nav class="header-nav">
-        <ul>
-          <li><a href="#portfolio">работы</a></li>
-          <li><a href="#we-develop">услуги</a></li>
-          <li><a href="#onas">о нас</a></li>
-          <li><a href="#contacts">контакты</a></li>
-          <li><a href="#" data-bs-toggle="modal" data-bs-target="#formModal" style="color: #1BACE4 !important">заявка</a></li>
-        </ul>
-      </nav>
-      <div class="header-nav__overflow"></div>
-      <div class="header-burger header__burger">
-        <div class="header-burger__open-icon">
-          <svg style="width: 53px; height: 13px" class="sprite-svg">
-
-    <use xlink:href="images/icons/icons.svg#burger-close"></use>
-
-</svg>
-        </div>
-        <div class="header-burger__close-icon">
-          <svg style="width: 25px; height: 25px" class="sprite-svg">
-
-    <use xlink:href="images/icons/icons.svg#burger-open"></use>
-
-</svg>
+    
+    <header>
+      <div class="container-xl py-10 py-lg-15">
+        <div class="d-flex align-items-start align-items-lg-center gap-10 justify-content-between">
+          <!-- <button class="hamburger d-block d-lg-none" id="mobile-menu-btn">
+            <div class="btn__hamb btn__hamb--triangle-inverce">
+              <div></div>
+            </div>
+          </button> -->
+          <div class="header-burger">
+            <img class="header-burger__open-icon" src="./images/open.svg" alt="">
+            <img class="header-burger__close-icon" src="./images/close.svg" alt="">
+          </div>
+          <nav class="hidden-nav">
+            <ul>
+              <li>
+                <a href="" class="text-muted" data-bs-toggle="modal" data-bs-target="#formModal">Сотрудничество</a>
+              </li>
+              <li>
+                <a href="#" class="text-muted" data-bs-toggle="modal" data-bs-target="#newModal">Бесплатная регистрация</a>
+              </li>
+              <li>
+                <a href="#" class="text-muted" data-bs-toggle="modal" data-bs-target="#newModal">Войти</a>
+              </li>
+            </ul>
+          </nav>
+          <div class="d-flex align-items-center flex-column">
+            <img class="mwx-160 mwx-xl-200" src="./images/logo.svg" alt="">
+          </div>
+          <div class="d-flex align-items-center flex-column gap-10 flex-xl-row gap-xl-30">
+            <span class="fw-medium cursor-pointer fsc-12 fsc-lg-14 text-decoration-underline text-muted d-none d-xl-inline-block" data-bs-toggle="modal" data-bs-target="#formModal">Сотрудничество</span>
+            <a class="fsc-14 fw-medium btn btn-primary d-none d-xl-inline-block" style="color: #1d1e2c; padding: 12px 35px" href="#" data-bs-toggle="modal" data-bs-target="#newModal">
+              Бесплатная регистрация
+            </a>
+            <a href="#" data-bs-toggle="modal" data-bs-target="#newModal" class="d-flex align-items-center gap-10 text-decoration-none">
+              <img src="./images/person.svg" width="22" alt="">
+              <span class="d-none d-xl-inline-block" style="color: #1d1e2c; font-weight: 600; font-size: 12px">Войти</span>
+            </a>
+          </div>
         </div>
       </div>
-    </div>
-  </div>
-</header>
+    </header>
     <main>
       <section>
-        
+        <div class="container-xl">
+          <div class="d-flex align-items-center flex-column flex-lg-row py-15 justify-content-between py-xl-30">
+            <div class="d-flex align-items-center flex-column align-items-md-start gap-5 gap-xl-20 text-center text-xl-start wp-100 wp-lg-40">
+              <p class="mb-0 fsc-32 fsc-xl-50 fw-bold new-line-height">
+                НАС МНОГО.  <br>
+                А ВЫ - СРЕДИ НАС.
+              </p>
+              <span class="fsc-16 fsc-xl-24 second-line-height">Все прокаты на одной платформе. <br>
+                С обменом информацией 24/7.</span>
+              <a href="https://drive.google.com/drive/folders/1g0oGgBA9H6CQBo97HL1i0fWPkN8-Ozrl?usp=sharing" target="_blank" class="fsc-14 btn btn-primary fsc-md-16" style="padding: 12px 35px; font-weight: 500; width: fit-content; margin-top: 23px;">PDF-презентация</a>
+            </div>
+            <div class="wp-100 wp-lg-60">
+              <picture><source srcset="./images/group.webp" type="image/webp"><img src="./images/group.png" class="wp-100" alt=""></picture>
+            </div>
+          </div>
+        </div>
       </section>
-      <section class="first-layout">
-    <div class="container-xxl first-layout__container">
-        <h1 class="animate__animated animate__fadeInRight">привет,<br>мы<span> жигули</span></h1>
-        <div class=""></div>
-    </div>
-</section>
-      <section class="num-section" id="onas">
-    <div class="container-xxl num-section-container">
-        <div class="row">
-            <div class="animate__animated animate__fadeInDown col-lg-6 animate__delay-1s">
-                <div class="bounce-block">
-                    <div class="bounce-block__wrapper bounce-block__wrapper--decorator">
-                    </div>
-                    <div class="bounce-block__wrapper bounce-block__wrapper--content">
-                        <div class="num-section-block">
-                            <p>40+</p>
-                            <span>научных статей</span>
-                        </div>
-                    </div>
-                </div>
+      <section class="d-lg-block d-none">
+        <div class="mx-auto max-width-new">
+          <div class="py-xl-35 bg-primary py-25">
+            <div class="">
+              <h2 class="fw-normal fsc-18 fsc-xl-24 fw-xl-normal idiots-line-height mb-0 text-center">
+                Одна страна. Одна отрасль. Одна база объектов. Одна CRM.
+              </h2>
             </div>
-            <div class="animate__animated animate__fadeInDown col-lg-6 animate__delay-2s">
-                <div class="bounce-block">
-                    <div class="bounce-block__wrapper bounce-block__wrapper--decorator">
-                    </div>
-                    <div class="bounce-block__wrapper bounce-block__wrapper--content">
-                        <div class="num-section-block">
-                            <p>5+</p>
-                            <span>лет <br> практического опыта</span>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="animate__animated animate__fadeInDown col-lg-6 animate__delay-3s">
-                <div class="bounce-block">
-                    <div class="bounce-block__wrapper bounce-block__wrapper--decorator">
-                    </div>
-                    <div class="bounce-block__wrapper bounce-block__wrapper--content">
-                        <div class="num-section-block">
-                            <p>15+</p>
-                            <span>специалистов <br> в штате и вне</span>
-                        </div>
-                    </div>
-                </div>
-            </div>
+          </div>
         </div>
-    </div>
-</section>
-
-
-<!-- <div class="bounce-block portfolio-block" style="padding: 0 18px 18px 0;">
-    <div class="bounce-block__wrapper bounce-block__wrapper--decorator" style="left: 18px; top: 18px;">
-    </div>
-    <div class="bounce-block__wrapper bounce-block__wrapper--content responsive-img overflow-hidden">
-        <picture><source srcset="./images/portfolio4.webp" type="image/webp"><img src="./images/portfolio4.png" class="responsive-img__image" alt=""></picture>
-        <div class="portfolio-block__layout">
-            <div class="portfolio-block__content">
-                <span class="fs-4">Болдино</span>
-                <div class="badge badge--one">
-                    айдентика
-                </div>
+      </section>
+      <section class="d-block d-lg-none">
+        <div class="mx-auto max-width-new">
+          <div class="py-xl-35 bg-primary py-25">
+            <div class="">
+              <h2 class="fw-normal fsc-18 fsc-xl-24 fw-xl-normal idiots-line-height mb-0 text-center">
+                Одна страна. Одна отрасль. <br>
+                Одна база объектов. <br>
+                Одна CRM.
+              </h2>
             </div>
-            <span></span>
+          </div>
         </div>
-    </div>
-</div> -->
-      <section class="container-xxl animate__animated animate__delay-5s animate__fadeInRight description mb-50 mb-lg-110">
-    <div class="bounce-block" style="padding: 0 8px 8px 0;">
-        <div class="bounce-block__wrapper bounce-block__wrapper--decorator" style="left: 8px; top: 8px;"></div>
-        <div class="bounce-block__wrapper bounce-block__wrapper--content fs-6 px-10 px-lg-20 py-20">
-            опытная команда маркетологов-предпринимателей
-            и дизайнеров, современные методы продвижения и дизайн-концепции, удобное расположение офисаи и работа по
-            договору с гарантией. на нашем счету опыт работы как с частными, так и с государственными клиентами,
-            положительные отзывы и широкий спектр предоставляемых услуг.
+      </section>
+      <section>
+        <div class="container-xl pt-15 pt-xl-50">
+          <h2 class="mb-15 text-center mb-lg-30 fw-xl-bold fsc-24 fsc-lg-36 fw-bold">
+            СИРИУС CRM. ОТРАСЛЕВАЯ ЦИФРОВАЯ ПЛАТФОРМА.
+          </h2>
+          <div class="d-flex justify-content-center d-xl-none mb-15">
+            <a href="#" data-bs-toggle="modal" data-bs-target="#newModal" class="fsc-14 fw-medium btn btn-primary order-first order-lg-last">
+              Бесплатная регистрация
+            </a>
+          </div>
+          <div class="d-flex justify-content-center align-items-start custom-pagination gap-30">
+            <div class="d-block d-lg-none mt-5 prev-btn">
+              <img src="./images/btn-34.svg" alt="">
+            </div>
+            <ul class="custom-pagination__ul">
+              <li>Главное</li>
+              <li>Транспорт</li>
+              <li>Клиенты</li>
+              <li>Безопасность</li>
+              <li>Сотрудники</li>
+            </ul>
+            <div class="d-block d-lg-none mt-5 next-btn">
+              <img src="./images/btn-35.svg" alt="">
+            </div>
+          </div>
+          <div class="main-slider overflow-hidden swiper-slider">
+            <div class="swiper-wrapper">
+              <div class="swiper-slide">
+                <div class="d-flex align-items-center flex-column gap-10 flex-lg-row gap-lg-0 py-15 py-lg-30">
+                  <ul class="fw-normal fsc-18 list-custom wp-lg-45">
+                    <li class="fsc-14 fw-normal fsc-lg-18 fw-lg-normal mb-5 mb-lg-10">
+                      Бесплатно
+                    </li>
+                    <li class="fsc-14 fw-normal fsc-lg-18 fw-lg-normal mb-5 mb-lg-10">
+                    Единая база транспорта России. Сдавайте чужие за 5%
+                    </li>
+                    <li class="fsc-14 fw-normal fsc-lg-18 fw-lg-normal mb-5 mb-lg-10">
+                    Глобальный черный список клиентов РФ
+                    </li>
+                    <li class="fsc-14 fw-normal fsc-lg-18 fw-lg-normal mb-5 mb-lg-10">
+                      Легковой, Коммерческий, Мотоциклы, Автодома, Прицепы
+                    </li>
+                    <li class="fsc-14 fw-normal fsc-lg-18 fw-lg-normal mb-5 mb-lg-10">
+                      Воздушный, Водный, Спецтехника, Эвакуаторы
+                    </li>
+                    <li class="fsc-14 fw-normal fsc-lg-18 fw-lg-normal mb-5 mb-lg-10">
+                      Все виды аренды: Без экипажа, С экипажем, С выкупом
+                    </li>
+                    <li class="fsc-14 fw-normal fsc-lg-18 fw-lg-normal mb-5 mb-lg-10">
+                      100% рутины автоматизировано, никаких «рук» и ошибок
+                    </li>
+                    <li class="fsc-14 fw-normal fsc-lg-18 fw-lg-normal mb-5 mb-lg-10">
+                      100% загрузка парка: все сдают транспорт друг друга
+                    </li>
+                    <li class="fsc-14 fw-normal fsc-lg-18 fw-lg-normal mb-5 mb-lg-10">
+                      100% загрузка парка: агрегаторы сдают транспорт
+                      всех
+                    </li>
+                    <li class="fsc-14 fw-normal fsc-lg-18 fw-lg-normal mb-5 mb-lg-10">
+                      Открытый API - связь с вашим текущим сайтом
+                    </li>
+                  </ul>
+                  <div class="wp-lg-55">
+                    <picture><source srcset="./images/main.webp" type="image/webp"><img class="wp-100" width="100" height="100" src="./images/main.png" alt=""></picture>
+                  </div>
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="d-flex align-items-center flex-column gap-10 flex-lg-row gap-lg-0 py-15 py-lg-30">
+                  <ul class="fw-normal fsc-18 list-custom wp-lg-45">
+                    <li class="fsc-14 fw-normal fsc-lg-18 fw-lg-normal mb-5 mb-lg-10">
+                      Автоматический контроль событий по датам и пробегу
+                    </li>
+                    <li class="fsc-14 fw-normal fsc-lg-18 fw-lg-normal mb-5 mb-lg-10">
+                      Автоматическая активация статуса «Карантин» (не готов)
+                    </li>
+                    <li class="fsc-14 fw-normal fsc-lg-18 fw-lg-normal mb-5 mb-lg-10">
+                      Заказ полисов ОСАГО, КАСКО, ЗЧ в 1 клик
+                    </li>
+                    <li class="fsc-14 fw-normal fsc-lg-18 fw-lg-normal mb-5 mb-lg-10">
+                      Заказ посуточного КАСКО для легкового
+                      <br class="d-md-none d-inline">
+                      сегмента
+                    </li>
+                    <li class="fsc-14 fw-normal fsc-lg-18 fw-lg-normal mb-5 mb-lg-10">
+                      Наблюдение за объектами на карте и блокировка двигателей
+                    </li>
+                    <li class="fsc-14 fw-normal fsc-lg-18 fw-lg-normal mb-5 mb-lg-10">
+                      Штрафы, Платные дороги, ФССП - все уже
+                      <br class="d-md-none d-inline">
+                      внутри
+                    </li>
+                    <li class="fsc-14 fw-normal fsc-lg-18 fw-lg-normal mb-5 mb-lg-10">
+                      Отмена крупных (от 100 т.р.) штрафов ГИБДД на ЮЛ в 1 клик
+                    </li>
+                    <li class="fsc-14 fw-normal fsc-lg-18 fw-lg-normal mb-5 mb-lg-10">
+                      Контроль остатков склада с датой инвентаризации
+                    </li>
+                  </ul>
+                  <div class="wp-lg-55">
+                    <picture><source srcset="./images/vehicle.webp" type="image/webp"><img class="wp-100" width="100" height="100" src="./images/vehicle.png" alt=""></picture>
+                  </div>
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="d-flex align-items-center flex-column gap-10 flex-lg-row gap-lg-0 py-15 py-lg-30">
+                  <ul class="fw-normal fsc-18 list-custom wp-lg-45">
+                    <li class="fsc-14 fw-normal fsc-lg-18 fw-lg-normal mb-5 mb-lg-10">
+                      Поток клиентов от агрегаторов-партнеров
+                      <br class="d-md-none d-inline">
+                      СИРИУС
+                    </li>
+                    <li class="fsc-14 fw-normal fsc-lg-18 fw-lg-normal mb-5 mb-lg-10">
+                      Продажа своих заявок системе с комиссией 5%
+                    </li>
+                    <li class="fsc-14 fw-normal fsc-lg-18 fw-lg-normal mb-5 mb-lg-10">
+                      Онлайн календарь загрузки – мгновенные консультации
+                    </li>
+                    <li class="fsc-14 fw-normal fsc-lg-18 fw-lg-normal mb-5 mb-lg-10">
+                      ФЛ и ЮЛ в одной базе. Автопечать
+                      <br class="d-md-none d-inline">
+                      доверенностей на ТС ЮЛ
+                    </li>
+                    <li class="fsc-14 fw-normal fsc-lg-18 fw-lg-normal mb-5 mb-lg-10">
+                      Онлайн оплата в 1 клик для ваших клиентов (комиссия 5%)
+                    </li>
+                    <li class="fsc-14 fw-normal fsc-lg-18 fw-lg-normal mb-5 mb-lg-10">
+                      Авто-SMS оповещения о событиях: резерв, выдача, долг и
+                      т.д.
+                    </li>
+                    <li class="fsc-14 fw-normal fsc-lg-18 fw-lg-normal mb-5 mb-lg-10">
+                      ЛК клиента с историей заказов, штрафов, начислений и оплат
+                    </li>
+                    <li class="fsc-14 fw-normal fsc-lg-18 fw-lg-normal mb-5 mb-lg-10">
+                      Срок верификации (актуальности проверки) клиентов
+                    </li>
+                    <li class="fsc-14 fw-normal fsc-lg-18 fw-lg-normal mb-5 mb-lg-10">
+                      Контроль качества каждой поездки. Рейтинги ТС
+                    </li>
+                  </ul>
+                  <div class="wp-lg-55">
+                    <picture><source srcset="./images/clients.webp" type="image/webp"><img class="wp-100" width="100" height="100" src="./images/clients.png" alt=""></picture>
+                  </div>
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="d-flex align-items-center flex-column gap-10 flex-lg-row gap-lg-0 py-15 py-lg-30">
+                  <ul class="fw-normal fsc-18 list-custom wp-lg-45">
+                    <li class="fsc-14 fw-normal fsc-lg-18 fw-lg-normal mb-5 mb-lg-10">
+                      Проверка ФЛ и ЮЛ по платным базам в один
+                      <br class="d-md-none d-inline">
+                      клик
+                    </li>
+                    <li class="fsc-14 fw-normal fsc-lg-18 fw-lg-normal mb-5 mb-lg-10">
+                      Ручная проверка ФЛ и ЮЛ по алгоритмам СБ СИРИУС
+                    </li>
+                    <li class="fsc-14 fw-normal fsc-lg-18 fw-lg-normal mb-5 mb-lg-10">
+                      Настройка своего алгоритма проверки ФЛ и ЮЛ
+                    </li>
+                    <li class="fsc-14 fw-normal fsc-lg-18 fw-lg-normal mb-5 mb-lg-10">
+                      Глобальный черный список клиентов РФ
+                    </li>
+                    <li class="fsc-14 fw-normal fsc-lg-18 fw-lg-normal mb-5 mb-lg-10">
+                      Наблюдение за объектами на карте и
+                      <br class="d-md-none d-inline">
+                      блокировка двигателей
+                    </li>
+                    <li class="fsc-14 fw-normal fsc-lg-18 fw-lg-normal mb-5 mb-lg-10">
+                      Функция "SOS"-помощь в любом городе от пользователей
+                    </li>
+                    <li class="fsc-14 fw-normal fsc-lg-18 fw-lg-normal mb-5 mb-lg-10">
+                      Контроль должников в отдельном разделе. Суды
+                    </li>
+                    <li class="fsc-14 fw-normal fsc-lg-18 fw-lg-normal mb-5 mb-lg-10">
+                      Продажа ваших должников коллекторам в 1 клик
+                    </li>
+                  </ul>
+                  <div class="wp-lg-55">
+                    <picture><source srcset="./images/bezopasnost.webp" type="image/webp"><img class="wp-100" width="100" height="100" src="./images/bezopasnost.png" alt=""></picture>
+                  </div>
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="d-flex align-items-center flex-column gap-10 flex-lg-row gap-lg-0 py-15 py-lg-30">
+                  <ul class="fw-normal fsc-18 list-custom wp-lg-45">
+                    <li class="fsc-14 fw-normal fsc-lg-18 fw-lg-normal mb-5 mb-lg-10">
+                      Сотрудник имеет права клиента с допуском в CRM
+                    </li>
+                    <li class="fsc-14 fw-normal fsc-lg-18 fw-lg-normal mb-5 mb-lg-10">
+                      График сотрудников. Мгновенный обмен сменами
+                    </li>
+                    <li class="fsc-14 fw-normal fsc-lg-18 fw-lg-normal mb-5 mb-lg-10">
+                      Функция ЗРС – обращения к ген. директору онлайн
+                    </li>
+                    <li class="fsc-14 fw-normal fsc-lg-18 fw-lg-normal mb-5 mb-lg-10">
+                      Функция Приказы – постановка и контроль приказов онлайн
+                    </li>
+                    <li class="fsc-14 fw-normal fsc-lg-18 fw-lg-normal mb-5 mb-lg-10">
+                      Оргполитика – раздел с инструкциями и
+                      <br class="d-md-none d-inline">
+                      файлами
+                    </li>
+                    <li class="fsc-14 fw-normal fsc-lg-18 fw-lg-normal mb-5 mb-lg-10">
+                      Общая телефонная книга паролей
+                    </li>
+                    <li class="fsc-14 fw-normal fsc-lg-18 fw-lg-normal mb-5 mb-lg-10">
+                      Академия аренды СИРИУС - обучение аренде
+                    </li>
+                  </ul>
+                  <div class="wp-lg-55">
+                    <picture><source srcset="./images/employees.webp" type="image/webp"><img class="wp-100" width="100" height="100" src="./images/employees.png" alt=""></picture>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
         </div>
-    </div>
-</section>
-      <section class="portfolio mb-50 mb-lg-110 position-relative" id="portfolio">
-
-    <div class="px-10 px-lg-20 container-xxl">
-        <h2 class="block-title">мы сделали</h2>
-        <div class="row gy-20">
-            <div class="px-10 col-xl-11">
-                <a href="https://www.behance.net/gallery/175421299/Boldino" target="_blank" class="bounce-block portfolio-block" style="padding: 0 18px 18px 0;">
-                    <div class="bounce-block__wrapper bounce-block__wrapper--decorator" style="left: 18px; top: 18px;">
-                    </div>
-                    <div class="bounce-block__wrapper bounce-block__wrapper--content overflow-hidden responsive-img">
-                        <img src="./images/Финальная преза-08.jpg" class="responsive-img__image" alt="">
-                        <div class="portfolio-block__layout">
-                            <div class="portfolio-block__content">
-                                <span class="fs-4">Болдино</span>
-                                <div class="badge badge--one">
-                                    айдентика
-                                </div>
-                            </div>
-                            <span></span>
-                        </div>
-                    </div>
-                </a>
-            </div>
-            <div class="px-10 col-xl-7">
-                <a href="https://www.behance.net/gallery/170749625/_" target="_blank" class="bounce-block portfolio-block" style="padding: 0 18px 18px 0;">
-                    <div class="bounce-block__wrapper bounce-block__wrapper--decorator" style="left: 18px; top: 18px;">
-                    </div>
-                    <div class="bounce-block__wrapper bounce-block__wrapper--content overflow-hidden responsive-img">
-                        <picture><source srcset="./images/Chrome-Logo-Mockup.webp" type="image/webp"><img src="./images/Chrome-Logo-Mockup.png" class="responsive-img__image" alt=""></picture>
-                        <div class="portfolio-block__layout">
-                            <div class="portfolio-block__content">
-                                <span class="fs-4">|:|</span>
-                                <div class="badge badge--one">
-                                    логотип
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </a>
-            </div>
-            <div class="px-10 col-xl-7">
-                <a href="https://www.behance.net/gallery/170642175/Commonwealth-Cup" target="_blank" class="bounce-block portfolio-block" style="padding: 0 18px 18px 0;">
-                    <div class="bounce-block__wrapper bounce-block__wrapper--decorator" style="left: 18px; top: 18px;">
-                    </div>
-                    <div class="bounce-block__wrapper bounce-block__wrapper--content overflow-hidden responsive-img">
-                        <picture><source srcset="./images/flag_mockup_sachanati.com.webp" type="image/webp"><img src="./images/flag_mockup_sachanati.com.jpg" class="responsive-img__image" alt=""></picture>
-                        <div class="portfolio-block__layout">
-                            <div class="portfolio-block__content">
-                                <span class="fs-4">Кубок содружества</span>
-                                <div class="badge badge--one">
-                                    логотип
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </a>
-            </div>
-            <div class="px-10 col-xl-11">
-                <a href="https://www.behance.net/gallery/170911101/Spline-Engineering" target="_blank" class="bounce-block portfolio-block" style="padding: 0 18px 18px 0;">
-                    <div class="bounce-block__wrapper bounce-block__wrapper--decorator" style="left: 18px; top: 18px;">
-                    </div>
-                    <div class="bounce-block__wrapper bounce-block__wrapper--content overflow-hidden responsive-img">
-                        <picture><source srcset="./images/01-raw-tote-bag-mockup.webp" type="image/webp"><img src="./images/01-raw-tote-bag-mockup.png" class="responsive-img__image" alt=""></picture>
-                        <div class="portfolio-block__layout">
-                            <div class="portfolio-block__content">
-                                <span class="fs-4">Spline Engineering</span>
-                                <div class="badge badge--one">
-                                    айдентика
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </a>
-            </div>
-            <div class="px-10 col-xl-11">
-                <a href="https://www.behance.net/gallery/168017141/Bubble-Wuffle" target="_blank" class="bounce-block portfolio-block" style="padding: 0 18px 18px 0;">
-                    <div class="bounce-block__wrapper bounce-block__wrapper--decorator" style="left: 18px; top: 18px;">
-                    </div>
-                    <div class="bounce-block__wrapper bounce-block__wrapper--content overflow-hidden responsive-img">
-                        <picture><source srcset="./images/01-outdoor-sign-free-mockup-by-mockupcloud.webp" type="image/webp"><img src="./images/01-outdoor-sign-free-mockup-by-mockupcloud.jpg" class="responsive-img__image" alt=""></picture>
-                        <div class="portfolio-block__layout">
-                            <div class="portfolio-block__content">
-                                <span class="fs-4">Bubble&Wuffle</span>
-                                <div class="badge badge--one">
-                                    логотип
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </a>
-            </div>
-            <div class="px-10 col-xl-7">
-                <div class="bounce-block portfolio-block">
-                    <p class="portfolio-block__title-btn">
-                        работать <br> с нами
-                    </p>
-                    <div class="portfolio-block__enter-btn" data-bs-toggle="modal" data-bs-target="#formModal">
-                        <picture><source srcset="./images/button.webp" type="image/webp"><img src="./images/button.png" alt=""></picture>
-                    </div>
-                </div>
-            </div>
-            <div class="px-10 col-xl-5">
-
-            </div>
+      </section>
+      <section>
+        <div class="mx-auto max-width-new">
+          <div class="px-5 bg-primary py-35">
+            <h2 class="fw-normal fsc-18 fsc-xl-24 fw-xl-normal idiots-line-height mb-0 text-center">
+              Это больше, чем самая совершенная CRM.
+              <br class="d-md-none d-inline">
+              Это новый уровень бизнеса.
+            </h2>
+          </div>
         </div>
-    </div>
-</section>
-      <section class="we-develop" id="we-develop">
-
-
-    <div class="px-10 px-lg-20 container-xxl">
-        <h2 class="block-title">мы разрабатываем</h2>
-        <div class="row gy-20">
-            <div class="px-10 col-xl-11">
-                <div class="bounce-block we-develop-block" style="padding: 0 18px 18px 0;">
-                    <div class="bounce-block__wrapper bounce-block__wrapper--decorator" style="left: 18px; top: 18px;">
-                    </div>
-                    <div class="bounce-block__wrapper bounce-block__wrapper--content">
-                        <div class="we-develop-block__layout">
-                            <div class="we-develop-block__content">
-                                <div class="we-develop-block__title">дизайн</div>
-                                <p class="we-develop-block__subtitle">
-                                    создание ключевых визуальных констант, совмещающих в себе
-                                    оригинальность, запоминаемость, эстетичность и функциональность
-                                </p>
-                                <div class="we-develop-block__budge-list">
-                                    <div class="badge badge--two">
-                                        логотипы
-                                    </div>
-                                    <div class="badge badge--two">
-                                        айдентика
-                                    </div>
-                                    <div class="badge badge--two">
-                                        упаковка
-                                    </div>
-                                    <div class="badge badge--two">
-                                        соцсети
-                                    </div>
-                                    <div class="badge badge--two">
-                                        мерч
-                                    </div>
-                                    <div class="badge badge--two">
-                                    рекламные материалы
-                                    </div>
-                                </div>
-                            </div>
-                            <span class="we-develop-block__price">от 15 000₽</span>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="px-10 col-xl-7">
-                <div class="bounce-block we-develop-block" style="padding: 0 18px 18px 0;">
-                    <div class="bounce-block__wrapper bounce-block__wrapper--decorator" style="left: 18px; top: 18px;">
-                    </div>
-                    <div class="bounce-block__wrapper bounce-block__wrapper--content">
-                        <div class="we-develop-block__layout">
-                            <div class="we-develop-block__content">
-                                <div class="we-develop-block__title">бренды</div>
-                                <p class="we-develop-block__subtitle">
-                                    от разработки внутренней среды, анализа направления, до комплексной разработки инструмента коммуникации с вашей аудиторией
-                                </p>
-                                <div class="we-develop-block__budge-list">
-                                    <div class="badge badge--two">
-                                        визуал
-                                    </div>
-                                    <div class="badge badge--two">
-                                        консультации
-                                    </div>
-                                    <div class="badge badge--two">
-                                        контент-план
-                                    </div>
-                                    <div class="badge badge--two">
-                                        шаблоны
-                                    </div>
-                                </div>
-                            </div>
-                            <span class="we-develop-block__price">от 15 000₽</span>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="px-10 col-xl-7">
-                <div class="bounce-block we-develop-block" style="padding: 0 18px 18px 0;">
-                    <div class="bounce-block__wrapper bounce-block__wrapper--decorator" style="left: 18px; top: 18px;">
-                    </div>
-                    <div class="bounce-block__wrapper bounce-block__wrapper--content">
-                        <div class="we-develop-block__layout">
-                            <div class="we-develop-block__content">
-                                <div class="we-develop-block__title">медиа-киты</div>
-                                <p class="we-develop-block__subtitle">
-                                    разработаем то, на что в первую очередь обращают внимание, если хотят с вами сотрудничать
-                                </p>
-                                <div class="we-develop-block__budge-list">
-                                    <div class="badge badge--two">
-                                        исследование
-                                    </div>
-                                    <div class="badge badge--two">
-                                        презентация
-                                    </div>
-                                </div>
-                            </div>
-                            <span class="we-develop-block__price">от 15 000₽</span>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="px-10 col-xl-11">
-                <div class="bounce-block we-develop-block" style="padding: 0 18px 18px 0;">
-                    <div class="bounce-block__wrapper bounce-block__wrapper--decorator" style="left: 18px; top: 18px;">
-                    </div>
-                    <div class="bounce-block__wrapper bounce-block__wrapper--content">
-                        <div class="we-develop-block__layout">
-                            <div class="we-develop-block__content">
-                                <div class="we-develop-block__title">стратегии</div>
-                                <p class="we-develop-block__subtitle">
-                                    планирование достижения конкурентного преимущества, с целью привлечения потребителей и их конвертации в клиентов.
-                                </p>
-                                <div class="we-develop-block__budge-list">
-                                    <div class="badge badge--two">
-                                        бизнес-планы
-                                    </div>
-                                    <div class="badge badge--two">
-                                        руководства
-                                    </div>
-                                    <div class="badge badge--two">
-                                        тестирование
-                                    </div>
-                                </div>
-                            </div>
-                            <span class="we-develop-block__price">от 15 000₽</span>
-                        </div>
-                    </div>
-                </div>
-            </div>
+      </section>
+      <section>
+        <div class="py-15 container-xl py-xl-50">
+          <h2 class="fw-medium text-center fsc-18 fsc-xl-24 mb-15 mb-lg-30 fw-xl-bold">
+            СИРИУС – ГЛАВНОЕ ОБЛАКО ОТРАСЛИ АРЕНДЫ ТРАНСПОРТА
+          </h2>
+          <div class="d-flex align-items-center mx-auto px-30 px-md-0" style="max-width: 930px">
+            <img src="./images/scheme.png" width="500" class="wp-100 d-md-inline-block d-none" alt="">
+            <img src="./images/scheme-mobile.png" width="100" height="100" class="d-md-none d-inline-block wp-100" alt="">
+          </div>
         </div>
-    </div>
-</section>
+      </section>
+      <section>
+        <div class="mx-auto max-width-new">
+          <div class="py-xl-35 bg-primary py-25 px-15">
+            <h2 class="fw-normal fsc-18 fsc-xl-24 fw-xl-normal idiots-line-height mb-0 text-center">
+              Все участники работают на одной <br class="d-md-none d-inline">
+              отраслевой цифровой платформе<br class="d-md-none d-inline">
+              <span class="fw-medium fw-xl-bold">СИРИУС</span>
+            </h2>
+          </div>
+        </div>
+      </section>
+      <section>
+        <div class="py-15 container-xl py-xl-50">
+          <h2 class="fw-medium text-center fsc-18 fsc-xl-24 mb-15 mb-lg-30 fw-xl-bold">
+            Какие проблемы решает <br class="d-md-none d-inline">
+            CRM СИРИУС
+          </h2>
+          <div class="" style="max-width: 1050px; margin: auto">
+            <ul class="fw-normal fsc-18 list-custom mb-25 mb-lg-40">
+              <li class="fsc-14 fw-normal fsc-lg-18 fw-lg-normal mb-10 mb-lg-20">
+                Контролирует 99% ежедневной рутины.
+                <br class="d-md-none d-inline">
+                Все повторяющиеся задачи выполняет робот.
+              </li>
+              <li class="fsc-14 fw-normal fsc-lg-18 fw-lg-normal mb-10 mb-lg-20">
+                С первого дня экономит до 50% затрат
+                <br class="d-md-none d-inline">
+                на содержание арендного бизнеса.
+              </li>
+              <li class="fsc-14 fw-normal fsc-lg-18 fw-lg-normal mb-10 mb-lg-20">
+                На 1000% увеличивает скорость работы.
+                <br class="d-md-none d-inline">
+                Большинство операций делается в 1 клик.
+              </li>
+              <li class="fsc-14 fw-normal fsc-lg-18 fw-lg-normal mb-10 mb-lg-20">
+                Исключает 99% ошибок сотрудников.
+                <br class="d-md-none d-inline">
+                Система перепроверяет все данные и не даст случайно ошибиться.
+              </li>
+              <li class="fsc-14 fw-normal fsc-lg-18 fw-lg-normal mb-10 mb-lg-20">
+                Исключает на 99% риск любого воровства сотрудниками. Все
+                потенциальные точки воровства под контролем робота.
+              </li>
+              <li class="fsc-14 fw-normal fsc-lg-18 fw-lg-normal mb-10 mb-lg-20">
+                Исключает 99% риска угонов или криминала со стороны клиентов - 5
+                ступеней защиты.
+              </li>
+              <li class="fsc-14 fw-normal fsc-lg-18 fw-lg-normal mb-10 mb-lg-20">
+                На 99% загружает любой транспорт клиентами благодаря агрегаторам
+                на платформе.
+              </li>
+              <li class="fsc-14 fw-normal fsc-lg-18 fw-lg-normal mb-10 mb-lg-20">
+                На 99% решает вопрос неотработанных заявок. Продайте системе
+                любой ваш заказ за 5% в 1 клик.
+              </li>
+              <li class="fsc-14 fw-normal fsc-lg-18 fw-lg-normal mb-10 mb-lg-20">
+                На 99% поможет с поиском вашего ТС в другом городе - вам помогут
+                другие пользователи системы.
+              </li>
+            </ul>
+            <div class="fsc-14 text-center fsc-lg-20 ps-0 ps-lg-20 text-lg-start">
+              Мы уверены в СИРИУС на 100%.<br class="d-md-none d-inline">
+              Скептикам мы дарим 1% по каждому пункту.
+            </div>
+          </div>
+        </div>
+      </section>
+      <section>
+        <div class="mx-auto max-width-new">
+          <div class="py-xl-35 bg-primary py-25 px-15">
+            <h2 class="fw-normal fsc-18 fsc-xl-24 fw-xl-normal idiots-line-height mb-0 text-center">
+              <span class="fw-medium fw-xl-bold">СИРИУС</span> помогает,
+              экономит, <br class="d-md-none d-inline">
+              ускоряет, защищает, улучшает,<br class="d-md-none d-inline">
+              развивает и поддерживает
+              <span class="fw-medium fw-xl-bold">24/7</span>
+            </h2>
+          </div>
+        </div>
+      </section>
+      <section>
+        <div class="py-15 container-xl py-xl-50">
+          <h2 class="fw-medium text-center fsc-18 fsc-xl-24 mb-15 mb-lg-30 fw-xl-bold idiots-line-height">
+            АГРЕГАТОРЫ И ПОЛЬЗОВАТЕЛИ СИРИУС ЕЖЕМИНУТНО РЕГИСТРИРУЮТ ЗАКАЗЫ
+            СО ВСЕЙ РОССИИ. ИСПОЛЬЗУЙТЕ ЭТО С ФУНКЦИЕЙ SIRIUS GLOBAL
+          </h2>
+          <div class="gx-30 gy-15 row justify-content-center">
+            <div class="col-md-6 col-xl-4">
+              <div class="border h-100 p-15 rounded-10 text-center" style="border-color: #0056af">
+                <span class="fw-medium fsc-lg-18">SIRIUS GLOBAL START (SGS)</span>
+                <div class="mb-15 mt-15">
+                  <picture><source srcset="./images/map-1.webp" type="image/webp"><img loading="lazy" width="100" height="100" class="wp-100" src="./images/map-1.png" alt=""></picture>
+                </div>
+                <div class="fsc-14">
+                  <span class="fw-medium">Получайте крупные заказы (30/180/360 суток)</span>
+                  <p class="fw-normal mb-0">
+                    с началом/завершением аренды в соседнем городе – укажите
+                    радиус и доставьте ваш объект клиенту.
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-6 col-xl-4">
+              <div class="border h-100 p-15 rounded-10 text-center" style="border-color: #0056af">
+                <span class="fw-medium fsc-lg-18">SIRIUS GLOBAL FINISH (SGF)</span>
+                <div class="mb-15 mt-15">
+                  <picture><source srcset="./images/map-2.webp" type="image/webp"><img loading="lazy" class="wp-100" width="100" height="100" src="./images/map-2.png" alt=""></picture>
+                </div>
+                <div class="fsc-14">
+                  <span class="fw-medium">Получайте крупные заказы (30/180/360 суток)</span>
+                  <p class="fw-normal mb-0">
+                    с завершением аренды в соседнем городе – укажите радиус и
+                    заберите после аренды ваш объект.
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-6 col-xl-4">
+              <div class="border h-100 p-15 rounded-10 text-center" style="border-color: #0056af">
+                <span class="fw-medium fsc-lg-18">SIRIUS GLOBAL TRANSIT (SGT)</span>
+                <div class="mb-15 mt-15">
+                  <picture><source srcset="./images/map-3.webp" type="image/webp"><img loading="lazy" class="wp-100" width="100" height="100" src="./images/map-3.png" alt=""></picture>
+                </div>
+                <div class="fsc-14">
+                  <span class="fw-medium">Включите функцию перемещения вашего объекта
+                  </span>
+                  <p class="fw-normal mb-0">
+                    в зоны высокого спроса (загрузка 85%+). Система будет
+                    автоматически искать заказы с возвратом только в "зеленой
+                    зоне".
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section>
+        <div class="mx-auto max-width-new">
+          <div class="py-xl-35 bg-primary py-10">
+            <div class="mx-auto mwx-md-none mwx-245">
+              <h2 class="fw-normal fsc-18 fsc-xl-24 fw-xl-normal idiots-line-height mb-0 text-center">
+                СДАВАЙТЕ СВОИ ОБЪЕКТЫ <br class="d-md-none d-inline">
+                НЕ ТАМ ГДЕ ВАМ УДОБНО,<br>
+                <span class="fw-medium fw-xl-bold">А ТАМ ГДЕ ЕСТЬ ЗАКАЗЫ <br class="d-md-none d-inline">
+                  ПРЯМО СЕЙЧАС</span>
+              </h2>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section>
+        <div class="py-15 container-xl py-xl-50">
+          <h2 class="fw-medium text-center fsc-18 fsc-xl-24 mb-15 mb-lg-30 fw-md-bold">
+            КАК ЗАРАБАТЫВАТЬ БОЛЬШЕ, ИСПОЛЬЗУЯ СИРИУС
+          </h2>
+          <div class="gx-30 gy-15 row gy-lg-30">
+            <div class="col-md-6 col-xl-4">
+              <div class="d-flex flex-column border border-dark h-100 p-15 p-md-20 position-relative rounded-10">
+                <div class="fsc-14 fw-medium align-items-center bg-primary d-flex justify-content-center position-absolute rounded-circle" style="width: 40px; height: 40px; top: 3px; right: 3px">
+                  1
+                </div>
+                <div class="d-flex align-items-center gap-15 mb-10">
+                  <img loading="lazy" src="./images/Frame241.svg" width="100" height="100" class="img-new" alt=""><span class="fw-medium fsc-lg-18">Владелец
+                  </span>
+                </div>
+                <p class="fsc-14 mb-10 flex-grow-1">
+                  Покупайте объекты по рекомендациям аналитики и передавайте на
+                  открытые площадки в городах высокого спроса.
+                </p>
+                <div class="fsc-14 fw-medium py-10 rounded-5 text-center text-white" style="background-color: #0C63AA;">
+                  Ваши 70% оборота
+                </div>
+              </div>
+            </div>
+            <div class="col-md-6 col-xl-4">
+              <div class="d-flex flex-column border border-dark h-100 p-15 p-md-20 position-relative rounded-10">
+                <div class="fsc-14 fw-medium align-items-center bg-primary d-flex justify-content-center position-absolute rounded-circle" style="width: 40px; height: 40px; top: 3px; right: 3px">
+                  2
+                </div>
+                <div class="d-flex align-items-center gap-15 mb-10">
+                  <img loading="lazy" src="./images/Frame241-1.svg" width="100" height="100" class="img-new" alt=""><span class="fw-medium fsc-lg-18">Площадка
+                  </span>
+                </div>
+                <p class="fsc-14 mb-10 flex-grow-1">
+                  Создавайте открытые площадки и управляйте объектами владельцев
+                  (от 1 объекта).
+                </p>
+                <div class="fsc-14 fw-medium py-10 rounded-5 text-center text-white" style="background-color: #0C63AA;">
+                  Ваши 10% оборота
+                </div>
+              </div>
+            </div>
+            <div class="col-md-6 col-xl-4">
+              <div class="d-flex flex-column border border-dark h-100 p-15 p-md-20 position-relative rounded-10">
+                <div class="fsc-14 fw-medium align-items-center bg-primary d-flex justify-content-center position-absolute rounded-circle" style="width: 40px; height: 40px; top: 3px; right: 3px">
+                  3
+                </div>
+                <div class="d-flex align-items-center gap-15 mb-10">
+                  <img loading="lazy" src="./images/Frame241-2.svg" width="100" height="100" class="img-new" alt=""><span class="fw-medium fsc-lg-18"><span style="line-height: 100%">Прокат</span> <br>
+                    <span class="fsc-14"> (владелец и площадка 2 в 1)</span>
+                  </span>
+                </div>
+                <p class="fsc-14 mb-10 flex-grow-1">
+                  Покупайте и управляйте своими объектами. Также можно сделать
+                  свою площадку открытой и управлять чужими объектами за
+                  <br class="d-md-none d-inline">
+                  10% от оборота.
+                </p>
+                <div class="fsc-14 fw-medium py-10 rounded-5 text-center text-white" style="background-color: #0C63AA;">
+                  Ваши 80% оборота
+                </div>
+              </div>
+            </div>
+            <div class="col-md-6 col-xl-4">
+              <div class="d-flex flex-column border border-dark h-100 p-15 p-md-20 position-relative rounded-10">
+                <div class="fsc-14 fw-medium align-items-center bg-primary d-flex justify-content-center position-absolute rounded-circle" style="width: 40px; height: 40px; top: 3px; right: 3px">
+                  4
+                </div>
+                <div class="d-flex align-items-center gap-15 mb-10">
+                  <img loading="lazy" src="./images/Frame241-3.svg" alt="" width="100" height="100" class="img-new"><span class="fw-medium fsc-lg-18">Агрегатор (источник <br class="d-md-none d-inline">
+                    заказов)
+                  </span>
+                </div>
+                <p class="fsc-14 mb-10 flex-grow-1">
+                  Разместите рекламу в любом городе России, принимайте заказы и
+                  продавайте аренду свободных объектов в системе.
+                </p>
+                <div class="fsc-14 fw-medium py-10 rounded-5 text-center text-white" style="background-color: #0C63AA;">
+                  Ваши 5% от оборота
+                </div>
+              </div>
+            </div>
+            <div class="col-md-6 col-xl-4">
+              <div class="d-flex flex-column border border-dark h-100 p-15 p-md-20 position-relative rounded-10">
+                <div class="fsc-14 fw-medium align-items-center bg-primary d-flex justify-content-center position-absolute rounded-circle" style="width: 40px; height: 40px; top: 3px; right: 3px">
+                  5
+                </div>
+                <div class="d-flex align-items-center gap-15 mb-10">
+                  <img loading="lazy" src="./images/Frame241-4.svg" width="100" height="100" class="img-new" alt=""><span class="fw-medium fsc-lg-18">Интегратор
+                  </span>
+                </div>
+                <p class="fsc-14 mb-10 flex-grow-1">
+                  Купите лицензию Интегратора и подключайте
+                  <br class="d-md-none d-inline">
+                  в CRM СИРИУС владельцев транспорта.
+                </p>
+                <div class="fsc-14 fw-medium py-10 rounded-5 text-center text-white" style="background-color: #0C63AA;">
+                  Ваши 2% от оборота
+                </div>
+              </div>
+            </div>
+            <div class="col-md-6 col-xl-4">
+              <div class="d-flex flex-column border border-dark h-100 p-15 p-md-20 position-relative rounded-10">
+                <div class="fsc-14 fw-medium align-items-center bg-primary d-flex justify-content-center position-absolute rounded-circle" style="width: 40px; height: 40px; top: 3px; right: 3px">
+                  6
+                </div>
+                <div class="d-flex align-items-center gap-15 mb-10">
+                  <img loading="lazy" src="./images/Frame241-5.svg" width="100" height="100" class="img-new" alt=""><span class="fw-medium fsc-lg-18">Все в одном
+                  </span>
+                </div>
+                <ul class="fsc-14 mb-10 flex-grow-1">
+                  <li>Купите объекты</li>
+                  <li>Создайте открытую площадку</li>
+                  <li>Разместите рекламу по аренде</li>
+                  <li>Купите лицензию интегратора</li>
+                </ul>
+                <div class="fsc-14 fw-medium py-10 rounded-5 text-center text-white" style="background-color: #0C63AA;">
+                  Используйте все возможности на максимум.
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="d-flex justify-content-center d-xl-none mt-15">
+            <a href="#" data-bs-toggle="modal" data-bs-target="#newModal" class="fsc-14 fw-medium btn btn-primary order-first order-lg-last">
+              Получить бесплатно
+            </a>
+          </div>
+        </div>
+      </section>
+      <section>
+        <div class="mx-auto max-width-new">
+          <div class="bg-primary">
+            <div class="py-15 bg-primary mwx-315 mwx-md-none mx-auto px-15 py-xl-35">
+              <h2 class="fw-normal fsc-18 fsc-xl-24 fw-xl-normal idiots-line-height mb-0 text-center">
+                СДАВАЙТЕ ТРАНСПОРТ <br class="d-md-none d-inline">
+                В СВОЕМ ГОРОДЕ. <br>
+                ИЛИ РАБОТАЙТЕ В МАСШТАБАХ <br class="d-md-none d-inline">
+                СТРАНЫ С
+                <span class="fw-medium fw-xl-bold">СИРИУС</span>
+              </h2>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section>
+        <div class="fsc-14 fw-normal container-xl fsc-lg-16 py-15 py-xl-50">
+          <div style="text-align: justify">
+            <p class="mb-15 mb-lg-25">
+              СИРИУС – отраслевая цифровая платформа аренды транспорта
+              России. СИРИУС – крупнейшая бесплатная онлайн CRM-система для
+              контроля аренды транспорта. На платформе СИРИУС работают все
+              участники рынка аренды: агрегаторы с клиентами, владельцы
+              транспорта (от 1 объекта), малые и большие площадки для транспорта
+              (управляющие компании), информационные партнеры (ГИБДД, АВТОДОР,
+              ФССП, GPS мониторинг, SMS рассылки, Онлайн-Эквайринг, Базы данных
+              ФЛ и ЮЛ) и партнеры: юристы по взысканию долгов, юристы по отмене
+              штрафов, поставщики автозапчастей, автосервисы, страховые компании
+              (полисы ОСАГО/КАСКО + посуточное КАСКО (NEW). Список партнеров
+              сервиса постоянно растет. На платформе СИРИУС контролируется
+              более 1 миллиона объектов из 1100 городов России.
+            </p>
+            <p class="mb-15 mb-lg-25">
+              Другие CRM для автопроката - это закрытые локальные программы для
+              учета аренды (программы для учета проката), работающие «сами по
+              себе» и не обменивающиеся данными с рынком. Онлайн CRM СИРИУС
+              ежесекундно обменивается данными со всеми пользователями,
+              например:<br><br>
+              -бесплатная функция «Черный список клиентов автопрокатов». Стоит
+              любому прокату, например, в Казани, поставить клиенту галочку
+              «Черный список» - теперь вся Россия, от Калининграда до Анадыря,
+              видит этого клиента (а также название и телефон проката-инициатора
+              ЧС и суть претензии) и не доверит ему транспорт, пока клиент не
+              компенсирует ущерб прокату-инициатору ЧС. И только
+              прокат-инициатор может снять у клиента статус «Черный список».
+              Более того, СИРИУС автоматически переносит любого клиента в
+              Черный список клиентов прокатов, если срок его задолженности
+              превысил 30 дней.
+            </p>
+            <p class="mb-15 mb-lg-25">
+              -бесплатная функция «Глобальная аналитика спроса». Все агрегаторы,
+              все пользователи добавляют в систему СИРИУС тысячи заказов
+              каждый час. Любой пользователь СИРИУС может просматривать
+              аналитику спроса по всей России по кластерам, чтобы перемещать
+              свой транспорт в зоны высокого спроса и «не стоять в родном
+              регионе». Кластер – это группа транспорта с одинаковыми
+              параметрами, например: Кластер 23 (седан, автомат, кондиционер,
+              цена закупки 600-999 т.р.) или Кластер 44 (минивэн, автомат,
+              кондиционер, цена закупки 2-3 млн.р.).
+            </p>
+            <p class="mb-25 mb-lg-35">
+              -бесплатная функция «Продать заказ». Больше вы не потеряете ни
+              одного заказа! Благодаря тому, что СИРИУС – это огромная база
+              объектов для аренды по всей России, пользователи СИРИУС каждую
+              минуту сдают транспорт друг друга по единому безопасному
+              алгоритму. Другими словами, у всех прокатов России теперь один
+              общий парк с миллионом объектов и тысячи менеджеров, которые
+              принимают заказы друг для друга. Чтобы ваш объект видели и могли
+              сдавать другие пользователи платформы СИРИУС, вам нужно в
+              настройках объекта поставить галочку «Получение заказов от
+              СИРИУС» и выбрать, какие заказы вам нужны: Без экипажа, С
+              экипажем, с Выкупом. Если галочку не поставить - ваш объект видите
+              и сдаете только вы. Теперь не важно, в какую компанию
+              позвонил/обратился клиент, у всех пользователей СИРИУС одна
+              общая база транспорта, и любой прокат может создать договор аренды
+              на ваш объект, как и вы можете создать договор аренды на его
+              объект. Тот, кто «поймал заказ»,- получает 5% от оборота
+              (источник), кому принадлежит объект – 70% (владелец), а кто выдал
+              и принял объект – 10% (площадка). Комиссия системы за «партнерский
+              договор» - 15%. Разумеется, если вы создаете заказы на свои
+              объекты, комиссии системы нет.
+              <br>
+              <br>
+              Два условия, чтобы вы продали аренду «чужого» объекта:<br><br>
+              1. Объект должен быть свободен. <br>
+              2. Клиента проверяет только лицензированная СБ СИРИУС
+              (проверка застрахована). <br><br>
+              Пример 1.<br>
+              Ваш прокат находится в Орле. Вы получаете звонок «Нужен
+              внедорожник в Орле с 1 по 8 октября». Допустим, такого авто на эти
+              даты у вас нет. Но у вас есть база всего арендного транспорта
+              России (кстати, даже яхт и самолетов). Вы открываете CRM
+              СИРИУС, переходите в раздел «Шахматка», выбираете: Орел, Без
+              экипажа, Легковой, Даты, Тип кузова «Внедорожник». Система сначала
+              показывает вам ВАШИ объекты, потом все остальные в вашем городе.
+              Так как у вас внедорожников нет, система сразу показывает вам
+              свободные внедорожники у ваших коллег. Предлагаете клиенту все
+              варианты. К примеру, клиент выбирает LEXUS LX 570 по 15000 руб. в
+              день. Сумма заказа 105000 руб. Вы в 1 клик «замораживаете» этот
+              LEXUS LX 570 на 60 минут под своего клиента. Далее, вы в 1 клик
+              отправляете клиента на проверку в СБ СИРИУС. Через 15 минут
+              получаете результат. Если «ОТКАЗ» - заявка переходит в архив. Если
+              «ДОПУСК» - перезваниваете клиенту и создаете в системе договор
+              аренды (точно такой же, как на свой транспорт). Клиенту уходит
+              SMS-подтверждение, и он оплачивает аренду. На этом ваша работа с
+              клиентом завершена. Далее у проката-исполнителя (площадки, где
+              стоит LEXUS LX 570) появляется новый оплаченный договор аренды на
+              LEXUS LX 570, и прокат-исполнитель связывается с клиентом за день
+              до начала поездки. После завершения аренды по факту итоговой
+              оплаченной суммы клиентом (с учетом продления, досрочного
+              возврата, перепробега и др. услуг) система переведет вам вашу
+              комиссию 5%. В этом примере вы получили 5250 руб. за 5 минут
+              работы с телефоном и программой СИРИУС.<br>
+              Пример 2.<br>
+              Ваш прокат находится в Рязани. Вы получаете звонок от своего
+              действующего клиента «Нужен эконом в Новосибирске с 10 по 30
+              октября. У вас есть партнеры?». Ответ – партнеры есть. Открываем
+              Шахматку: Новосибирск, Без экипажа, Легковой, Даты, Класс «Эконом»
+              - предлагаем, проверяем, создаем, получаем свои 5%.<br>
+              Пример 3.<br>
+              У вас вообще нет транспорта в аренду в России. Вы живете в
+              Таиланде и медитируете под пальмой. Вы просто даете рекламу по
+              аренде на Авито или в директ по любым городам. Получаете звонки.
+              Схема прежняя: Шахматка-город, Тип аренды, Даты, Класс, Кузов -
+              предлагаем, проверяем, создаем, получаем свои 5%.
+            </p>
+            <p class="mb-25 mb-lg-35">
+              В отличие от других CRM / программ учета автопроката, которые
+              разрабатывались IT студиями, ни минуты не работавшими с
+              транспортом, главной целью которых является сбор абонентской
+              платы, Отраслевая Цифровая Платформа СИРИУС разрабатывалась и
+              совершенствуется сегодня людьми, которые более 20 лет отдали
+              аренде транспорта и точно знают, что и как работает в реальных
+              условиях. <br>СИРИУС – это не просто бесплатная онлайн CRM
+              для контроля аренды автомобилей, грузовиков, мотоциклов,
+              автодомов, прицепов, водного и воздушного транспорта, спецтехники
+              и эвакуаторов,<br>
+              СИРИУС- это и есть отрасль аренды транспорта. Пробуйте.
+            </p>
+          </div>
+        </div>
+      </section>
+      <footer>
+        <div class="py-15 container-xl">
+          <div class="d-flex align-items-center flex-column gap-10 flex-xl-row justify-content-between">
+            <div class="d-flex align-items-center flex-column">
+              <img style="width: 210px;" src="./images/logo.svg" alt="">
+            </div>
+            <div class="d-flex align-items-center flex-column gap-10 flex-xl-row gap-xl-30">
+              <span class="fw-medium cursor-pointer fsc-12 fsc-lg-14 text-decoration-underline text-muted" data-bs-toggle="modal" data-bs-target="#formModal">Сотрудничество</span>
+              <a href="#" data-bs-toggle="modal" data-bs-target="#newModal" class="fsc-14 fw-medium btn btn-primary order-first order-lg-last">
+                Бесплатная регистрация
+              </a>
+            </div>
+            <div class="fsc-14 fw-normal text-center text-lg-end text-muted">
+              2023. Все права защищены. <br>
+              Политика конфиденциальности
+            </div>
+          </div>
+        </div>
+      </footer>
+      
       
     </main>
-      <footer class="footer pb-50 pb-lg-100" id="contacts">
-  <div class="px-10 px-lg-20 container-xxl">
-    <h2 class="block-title">найти нас</h2>
-    <div class="row gy-10 gy-lg-45 gy-md-10">
-      <div class="col-lg-4 col-lg-50p col-xl-4">
-        <div class="footer-decorate">
-          <a href="https://www.behance.net/8cc0e601" target="_blank" class="bounce-block" style="padding: 0 7px 7px 0;">
-            <div class="bounce-block__wrapper bounce-block__wrapper--decorator" style="left: 7px; top: 7px;">
-            </div>
-            <div class="bounce-block__wrapper bounce-block__wrapper--content box-aspect box-aspect--square">
-
-              <img width="115" class="footer-contacts-icon position-absolute" src="./images/iconmonstr-behance-1.svg" alt="">
-            </div>
-
-          </a>
-        </div>
-      </div>
-      <div class="col-lg-4 col-lg-50p col-xl-4">
-        <div class="footer-decorate">
-          <a href="https://vk.com/zhiguliagency" target="_blank" class="bounce-block" style="padding: 0 7px 7px 0;">
-            <div class="bounce-block__wrapper bounce-block__wrapper--decorator" style="left: 7px; top: 7px;">
-            </div>
-            <div class="bounce-block__wrapper bounce-block__wrapper--content box-aspect box-aspect--square">
-
-              <img width="115" class="footer-contacts-icon position-absolute" src="./images/vk.svg" alt="">
-            </div>
-
-          </a>
-        </div>
-      </div>
-      <div class="col-xl-10 col-lg-10">
-        <div class="bounce-block" style="padding: 0 7px 7px 0;">
-          <div class="bounce-block__wrapper bounce-block__wrapper--decorator" style="left: 7px; top: 7px;">
-          </div>
-          <div class="bounce-block__wrapper bounce-block__wrapper--content overflow-hidden">
-            <div class="footer-contacts-qr">
-              <div class="footer-contacts-qr__text">
-                <a href="mailto:zhiguliagency@gmail.com">zhiguliagency@gmail.com</a>
-                <a href="tel:+7(962)605-65-26">+7 (962) 605-65-26</a>
-                <a href="tel:+7(937)204-94-49">+7 (937) 204-94-49</a>
-              </div>
-              <div class="footer-contacts-qr__qr">
-                <a href="">
-                  <picture><source srcset="./images/qr.webp" type="image/webp"><img width="150" src="./images/qr.png" alt=""></picture>
-                </a>
-              </div>
-            </div>
-          </div>
-
-        </div>
-      </div>
-      <!-- <div class="col-xl-8 ">
-        <a class="bounce-block d-block" style="padding: 0 7px 7px 0;">
-          <div class="bounce-block__wrapper bounce-block__wrapper--decorator" style="left: 7px; top: 7px;">
-          </div>
-          <div class="bounce-block__wrapper bounce-block__wrapper--content">
-            <div class="d-flex flex-column p-25">
-              <a href="" class="fs-4 text-body-color text-decoration-none">г. Самара, ул. Самарская 146,<br /> Офис 208,
-                2 этаж</a>
-            </div>
-          </div>
-        </a>
-      </div> -->
-      <div class="col-xl-8">
-        <div class="footer-decorate">
-          <div class="bounce-block" style="padding: 0 7px 7px 0;">
-            <div class="bounce-block__wrapper bounce-block__wrapper--decorator" style="left: 7px; top: 7px;">
-            </div>
-            <div class="bounce-block__wrapper bounce-block__wrapper--content">
-              <div class="d-flex flex-column p-30">
-                <a href="" class="fs-4 fw-bold text-body-color text-decoration-none">г. Самара, ул. Самарская 146,<br> Офис 208,
-                  2 этаж</a>
-              </div>
-            </div>
-
-          </div>
-        </div>
-      </div>
-      <div class="col-xl-10">
-        <p class="footer-contacts-text-main">Наука для <br>
-          Вашего бизнеса</p>
-      </div>
-    </div>
-  </div>
-</footer>
-
-
-<div class="fade modal" id="formModal">
-  <div class="modal-dialog modal-dialog-centered modal-lg">
+    
+    <div class="fade modal" id="formModal">
+  <div class="modal-dialog modal-dialog-centered modal-sm">
     <div class="bg-transparent border-0 modal-content">
-      <div class="bounce-block" style="padding: 0 20px 20px 0;">
-        <div class="bounce-block__wrapper bounce-block__wrapper--decorator bg-white" style="left: 20px; top: 20px;">
+      <div class="bg-white rounded-25" style="padding: 20px 30px 30px 20px">
+        <div class="d-flex justify-content-end">
+          <button type="button" class="btn-close text-black" data-bs-dismiss="modal" aria-label="Close"></button>
         </div>
-        <div class="bounce-block__wrapper bounce-block__wrapper--content">
-          <form class="form-modal">
-            <p class="form-modal__title">поработаем вместе?</p>
-            <input type="text" placeholder="ваше имя" class="form-modal__input">
-            <input type="text" placeholder="как с вами связаться" class="form-modal__input">
-            <textarea name="" placeholder="о вашем проекте" class="form-modal__input form-modal__input--textarea"></textarea>
-            <input type="text" placeholder="предполагаемый бюджет" class="form-modal__input">
-            <div class="d-flex justify-content-center">
-              <div type="submit" value="отправить" class="form-modal__submit-btn" data-bs-toggle="modal" data-bs-target="#modalThanx" data-bs-dismiss="modal">отправить</div>
-            </div>
-          </form>
+        <div class="mb-15 text-center">
+          <div class="mb-15">
+            <span class="fsc-20 fsc-lg-24">Сотрудничество с <span class="fw-bold">SIRIUS</span>
+            </span>
+          </div>
+          <p class="fsc-14 fsc-lg-16">
+            Направьте свой запрос на электронную почту
+            <br><br>
+            <a href="mailto:support@sirius.ru" style="color: #0056af">support@sirius.ru</a>
+            <br><br>
+            Мы ответим вам в течение 24 часов.
+          </p>
         </div>
-
+        <div class="d-flex justify-content-center">
+          <div class="btn-same-custom" data-bs-dismiss="modal" aria-label="Close">
+            Закрыть
+          </div>
+        </div>
       </div>
     </div>
-
-
   </div>
 </div>
 
-
-<div class="fade modal" id="modalThanx">
-  <div class="modal-dialog modal-dialog-centered modal-lg">
+<div class="fade modal" id="newModal">
+  <div class="modal-dialog modal-dialog-centered modal-sm">
     <div class="bg-transparent border-0 modal-content">
-      <div class="d-flex flex-column p-30 bg-white gap-30 rounded-15">
-        <span class="fs-3 text-secondary"> Спасибо!
-          <br> Мы свяжемся с Вами в ближайшее время</span>
-        <div class="form-modal__submit-btn text-center" data-bs-dismiss="modal">закрыть</div>
+      <div class="bg-white rounded-25" style="padding: 20px 30px 30px 20px">
+        <div class="d-flex justify-content-end">
+          <button type="button" class="btn-close text-black" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="mb-15 text-center">
+          <div class="mb-15">
+            <span class="fw-bold fsc-20 fsc-lg-24">ВНИМАНИЕ!</span>
+          </div>
+          <p class="fsc-14 fsc-lg-16 mb-30">
+            Регистрация в CRM СИРИУС откроется 01.02.2024 в 10:00 (мск).
+            Хотите получить уведомление первыми? Напишите нам "Хочу бесплатную
+            CRM" на почту
+            <br><br>
+            <a href="mailto:support@sirius.ru" style="color: #0056af">support@sirius.ru</a>
+            <br><br>
+            Как только регистрация в CRM откроется - вам сразу придет
+            уведомление.
+          </p>
+        </div>
+        <div class="d-flex justify-content-center">
+          <div class="btn-same-custom" data-bs-dismiss="modal" aria-label="Close">
+            Закрыть
+          </div>
+        </div>
       </div>
-
     </div>
-
-
   </div>
 </div>
-<script src="js/app.min.js?_v=20231014124150"></script>
-
+ <script src="js/app.min.js?_v=20240409203034"></script>
   </body>
 </html>

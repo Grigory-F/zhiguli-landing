@@ -1,4 +1,4 @@
-@import "../../node_modules/swiper/swiper.scss";
+@import '../../node_modules/swiper/swiper.scss';
 
 .swiper-button-lock {
   display: none;
@@ -9,12 +9,95 @@
 }
 
 .swiper-wrapper {
-  max-height: 100%;
-  height: auto;
+}
+
+.new-line-height {
+  line-height: 47px;
+}
+.second-line-height {
+  line-height: 24px;
+}
+.idiots-line-height {
+  line-height: 40px;
+}
+@media (max-width: 1279px) {
+  .new-line-height {
+    line-height: 32px;
+  }
+  .second-line-height {
+    line-height: 20px;
+  }
+  .idiots-line-height {
+    line-height: 22.5px;
+  }
 }
 
 .swiper-slide {
-  height: auto;
+}
+
+.custom-pagination {
+  border-bottom: 1px solid #e3f0ff;
+  ul {
+    margin: 0 auto;
+    padding: 0;
+    list-style: none;
+    display: flex;
+    justify-content: space-between;
+    max-width: 750px;
+    width: 100%;
+    li {
+      padding: 0 5px 10px 5px;
+      font-size: 20px;
+      position: relative;
+      cursor: pointer;
+    }
+    li.swiper-pagination-bullet-active::before {
+      content: '';
+      display: block;
+      position: absolute;
+      height: 1px;
+      width: 100%;
+      bottom: 0;
+      left: 0;
+      background-color: rgba($color: #ff2400, $alpha: 0.2);
+    }
+    li.swiper-pagination-bullet-active::after {
+      content: '';
+      display: block;
+      position: absolute;
+      height: 1px;
+      width: 100%;
+      bottom: 0;
+      left: 0;
+      animation: fillbtn 10s ease-in;
+      background-color: rgba($color: #ff2400, $alpha: 1);
+    }
+  }
+}
+@keyframes fillbtn {
+  from {
+    width: 0;
+  }
+  to {
+    width: 100%;
+  }
+}
+
+@media (max-width: 992px) {
+  .custom-pagination {
+    border-bottom: 1px solid #e3f0ff;
+
+    ul {
+      margin: 0;
+      width: auto;
+      li {
+        display: none;
+      }
+      li.swiper-pagination-bullet-active {
+        display: block;
+      }
+    }
+  }
 }
 
 .slider-button-next,
@@ -23,7 +106,7 @@
   height: 52px;
   -ms-flex-negative: 0;
   flex-shrink: 0;
-  border: 1px solid #F9F9F9;
+  border: 1px solid #f9f9f9;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -59,8 +142,6 @@
   }
 }
 
-
-
 @media (max-width: 992px) {
   .slider-navigation-container {
     top: auto;
@@ -76,4 +157,3 @@
     bottom: 15px;
   }
 }
-

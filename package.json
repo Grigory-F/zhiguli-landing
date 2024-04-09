@@ -12,8 +12,8 @@
     "deployJS": "gulp deployJS --build",
     "svgSprive": "gulp svgSprive",
     "deploy": "gh-pages -d dist",
-    "predeploy": "npm run build",
-    "postbuild": "purgecss --css dist/css/*.css --content dist/**/*.html dist/**/*.js --output dist/css/style.min.css"
+    "predeploy": "npm run build"
+    
   },
   "keywords": [],
   "author": "",

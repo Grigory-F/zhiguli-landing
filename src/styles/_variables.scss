@@ -1,12 +1,12 @@
-@import "../../node_modules/bootstrap/scss/functions";
-@import "../../node_modules/bootstrap/scss/variables";
-@import "../../node_modules/bootstrap/scss/mixins";
-@import "../../node_modules/bootstrap/scss/maps";
-@import "../../node_modules/bootstrap/scss/utilities";
+@import '../../node_modules/bootstrap/scss/functions';
+@import '../../node_modules/bootstrap/scss/variables';
+@import '../../node_modules/bootstrap/scss/mixins';
+@import '../../node_modules/bootstrap/scss/maps';
+@import '../../node_modules/bootstrap/scss/utilities';
 
 /* Overraides default values */
-$primary: #e92b66;
-$secondary: #1BACE4;
+$primary: #f6ee25;
+$secondary: #23b14d;
 $thrity: #f8f9fa;
 $success: #0aa25d;
 $info: #404040;
@@ -17,45 +17,45 @@ $body-color: #000000;
 $link-color: $secondary;
 $link-color-hover: $primary;
 $opposite: #e6e6e6;
-$muted: #cccccc;
+$muted: #666666;
 
 $system-component: #f8f9fa;
 
 $light: #fff;
 $colors: (
-  "blue": $blue,
-  "indigo": $indigo,
-  "purple": $purple,
-  "pink": $pink,
-  "red": $red,
-  "orange": $orange,
-  "yellow": $yellow,
-  "green": $green,
-  "teal": $teal,
-  "cyan": $cyan,
-  "white": $white,
-  "gray": $gray-600,
-  "gray-dark": $gray-800,
+  'blue': $blue,
+  'indigo': $indigo,
+  'purple': $purple,
+  'pink': $pink,
+  'red': $red,
+  'orange': $orange,
+  'yellow': $yellow,
+  'green': $green,
+  'teal': $teal,
+  'cyan': $cyan,
+  'white': $white,
+  'gray': $gray-600,
+  'gray-dark': $gray-800,
 );
 
 $theme-colors: (
-  "primary": $primary,
-  "secondary": $secondary,
-  "success": $success,
-  "thrity": $thrity,
-  "info": $info,
-  "warning": $warning,
-  "danger": $danger,
-  "light": $light,
-  "dark": $dark,
-  "body-bg": $body-bg,
-  "body-color": $body-color,
-  "system-component": $system-component,
-  "opposite": $opposite,
-  "muted": $muted
+  'primary': $primary,
+  'secondary': $secondary,
+  'success': $success,
+  'thrity': $thrity,
+  'info': $info,
+  'warning': $warning,
+  'danger': $danger,
+  'light': $light,
+  'dark': $dark,
+  'body-bg': $body-bg,
+  'body-color': $body-color,
+  'system-component': $system-component,
+  'opposite': $opposite,
+  'muted': $muted,
 );
 
-$grid-columns: 18;
+$grid-columns: 12;
 
 $grid-breakpoints: (
   xs: 0,
@@ -74,22 +74,22 @@ $container-max-widths: (
   sm: 540px,
   md: 720px,
   lg: 960px,
-  xl: 1140px,
-  xxl: 1200px,
+  xl: 1225px,
+  xxl: 1300px,
   // bl: 1440px,
 );
 
 $min-height-sizes: (
-  "50": 50px,
-  "100": 100px,
-  "150": 150px,
-  "170": 170px,
-  "200": 200px,
-  "240": 240px,
-  "290": 290px,
-  "300": 300px,
-  "350": 350px,
-  "400": 400px,
+  '50': 50px,
+  '100': 100px,
+  '150': 150px,
+  '170': 170px,
+  '200': 200px,
+  '240': 240px,
+  '290': 290px,
+  '300': 300px,
+  '350': 350px,
+  '400': 400px,
 );
 
 $gutters: (
@@ -123,8 +123,8 @@ $border-radius-pill: 50rem;
 
 /* =======================FONT======================= */
 
-$font-family-sans-serif: "Manrope";
-$font-weight-base: 500;
+$font-family-sans-serif: 'YandexSansText';
+$font-weight-base: 400;
 $font-weight-bolder: 800;
 $font-weight-semi-bold: 600;
 $font-weight-medium: 500;
@@ -153,18 +153,16 @@ $font-sizes: (
   8: $medium-small-custom-font,
   9: $extra-small-custom-font,
   'spec': 18px,
-  "special-size": $special-size,
-  "big-font": $big-font-size,
+  'special-size': $special-size,
+  'big-font': $big-font-size,
 );
-
 
 .form-check-input:checked {
   background-color: $primary;
   border-color: $primary;
 }
 
-
-$dropdown-link-active-bg:           $primary;
+$dropdown-link-active-bg: $primary;
 
 $headings-margin-bottom: 30px;
 $headings-font-weight: 600;
@@ -178,13 +176,10 @@ $max-value-width-percent: 100;
 $begin-width-percent: 0;
 $spread-width-percent: 5;
 
-
-$modal-sm:                          300px;
-$modal-md:                          655px;
-$modal-lg:                          655px;
-$modal-xl:                          1140px;
-
-
+$modal-sm: 480px;
+$modal-md: 655px;
+$modal-lg: 655px;
+$modal-xl: 1140px;
 
 // GAP VALUES
 
@@ -212,7 +207,7 @@ $spread-gap: 5; */
     $size-map-cutom: map-merge(
       $size-map-cutom,
       (
-        "auto": auto,
+        'auto': auto,
       )
     );
   }
@@ -220,7 +215,7 @@ $spread-gap: 5; */
     $size-map-cutom: map-merge(
       $size-map-cutom,
       (
-        "none": none,
+        'none': none,
       )
     );
   }
@@ -249,14 +244,14 @@ $spread-gap: 5; */
 /* =======================MARGINS======================= */
 /* generate-sizes(50, 5, 5, "px", true), */
 $spacer: 1rem; /* 16px */
-$spacers: generate-sizes(150, 5, 5, "px", true, true, true);
+$spacers: generate-sizes(150, 5, 5, 'px', true, true, true);
 
 /* =======================POSITION======================= */
 
-$position-values: generate-sizes(100, 5, 5, "px", true, true, true);
+$position-values: generate-sizes(100, 5, 5, 'px', true, true, true);
 
 $utilities: (
-  "rounded": (
+  'rounded': (
     property: border-radius,
     class: rounded,
     responsive: true,
@@ -264,19 +259,26 @@ $utilities: (
     values:
       map-merge(
         (
-          "circle": 50%,
+          'circle': 50%,
         ),
-        generate-sizes(50, 5, 5, "px", true)
+        generate-sizes(50, 5, 5, 'px', true)
       ),
   ),
-  "font-size": (
+  'font-size': (
     property: font-size,
     responsive: true,
     class: fs,
     rfs: false,
     values: $font-sizes,
   ),
-  "font-weight": (
+  'font-size custom': (
+    property: font-size,
+    responsive: true,
+    class: fsc,
+    rfs: false,
+    values: generate-sizes(55, 1, 8, 'px', true),
+  ),
+  'font-weight': (
     property: font-weight,
     class: fw,
     responsive: true,
@@ -291,7 +293,7 @@ $utilities: (
       bolder: $font-weight-bolder,
     ),
   ),
-  "border-bottom": (
+  'border-bottom': (
     property: border-bottom,
     responsive: true,
     state: hover,
@@ -300,7 +302,7 @@ $utilities: (
       0: 0,
     ),
   ),
-  "border-color": (
+  'border-color': (
     property: border-color,
     class: border,
     responsive: true,
@@ -308,11 +310,11 @@ $utilities: (
       map-merge(
         $theme-colors,
         (
-          "white": $white,
+          'white': $white,
         )
       ),
   ),
-  "color": (
+  'color': (
     property: color,
     class: text,
     state: hover,
@@ -321,21 +323,21 @@ $utilities: (
       map-merge(
         map-merge($theme-colors, $colors),
         (
-          "reset": inherit,
+          'reset': inherit,
         )
       ),
   ),
-  "cursor": (
+  'cursor': (
     property: cursor,
     values: auto default pointer wait text move help not-allowed,
   ),
-  "min-height": (
+  'min-height': (
     property: min-height,
     class: min-h,
     responsive: true,
     values: $min-height-sizes,
   ),
-  "background-color": (
+  'background-color': (
     property: background-color,
     class: bg,
     responsive: true,
@@ -344,18 +346,18 @@ $utilities: (
       map-merge(
         map-merge($theme-colors, $colors),
         (
-          "body": $body-bg,
-          "transparent": transparent,
+          'body': $body-bg,
+          'transparent': transparent,
         )
       ),
   ),
-  "gap": (
+  'gap': (
     property: gap,
     class: gap,
     responsive: true,
-    values: generate-sizes($max-gap, $begin-gap, $spread-gap, "px", false, true),
+    values: generate-sizes($max-gap, $begin-gap, $spread-gap, 'px', false, true),
   ),
-  "max-width": (
+  'max-width': (
     property: max-width,
     class: mw,
     values: (
@@ -366,14 +368,20 @@ $utilities: (
       auto: auto,
     ),
   ),
-  "width": (
+  'max-width pixels': (
+    property: max-width,
+    class: mwx,
+    responsive: true,
+    values: generate-sizes(350, 5, 5, 'px', true, true),
+  ),
+  'width': (
     property: width,
     class: w,
     responsive: true,
     values:
-      generate-sizes($max-value-width, $spread-width, $begin-width, "px", true),
+      generate-sizes($max-value-width, $spread-width, $begin-width, 'px', true),
   ),
-  "width percent": (
+  'width percent': (
     property: width,
     class: wp,
     responsive: true,
@@ -382,10 +390,10 @@ $utilities: (
         $max-value-width-percent,
         $spread-width-percent,
         $begin-width-percent,
-        "%",
+        '%',
         true
       ),
   ),
 );
 
-@import "../../node_modules/bootstrap/scss/utilities/api";
+@import '../../node_modules/bootstrap/scss/utilities/api';

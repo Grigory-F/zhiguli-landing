@@ -1,165 +1,187 @@
 .header {
-    overflow-x: hidden;
-    position: fixed;
-    top: 0;
-    right: 0;
-    left: 0;
-    z-index: 200;
+  overflow-x: hidden;
+  position: fixed;
+  top: 0;
+  right: 0;
+  left: 0;
+  z-index: 200;
 
-    &__container {
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
-        // padding: 30px 20px 30px 30px;
-        padding-top: 30px;
-        padding-bottom: 30px;
-        padding-left: 28px !important;
-        padding-right: 17px !important;
-        background-color: white;
-        border-radius: 0px 0px 15px 15px;
+  &__container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    // padding: 30px 20px 30px 30px;
+    padding-top: 30px;
+    padding-bottom: 30px;
+    padding-left: 28px !important;
+    padding-right: 17px !important;
+    background-color: white;
+    border-radius: 0px 0px 15px 15px;
+  }
+
+  &__logo {
+    img {
+      width: 110px;
     }
+  }
 
-    &__logo {
-        img {
-            width: 110px;
-        }
-    }
-
-    &__burger {}
+  &__burger {
+  }
 }
 
-
 .header-nav {
-    ul {
-        display: flex;
-        align-items: center;
-        list-style: none;
-        gap: 50px;
-        margin-bottom: 0;
+  ul {
+    display: flex;
+    align-items: center;
+    list-style: none;
+    gap: 50px;
+    margin-bottom: 0;
 
-        a {
-            color: $body-color;
-            text-decoration: none;
-            font-size: 20px;
-            font-weight: 500;
-            transition: .3s ease-in;
-        }
+    a {
+      color: $body-color;
+      text-decoration: none;
+      font-size: 20px;
+      font-weight: 500;
+      transition: 0.3s ease-in;
+    }
 
-        a:hover {
-            transition: .3s ease-in;
-            color: $secondary;
-        }
+    a:hover {
+      transition: 0.3s ease-in;
+      color: $secondary;
     }
-    &__overflow {
-        display: none;
-    }
+  }
+  &__overflow {
+    display: none;
+  }
 }
 
 .header-burger {
-    display: none;
+  display: none;
 
-    &__close-icon {}
+  &__close-icon {
+  }
 
-    &__open-icon {}
+  &__open-icon {
+  }
 }
 
-
-
 @media (max-width: 992px) {
-    .header {}
+  .header {
+  }
 
-    .header-nav {
-        padding: 63px 44px;
-        position: fixed;
-        top: 0;
-        left: 100%;
-        background-color: white;
-        z-index: 100;
-        width: 80vw;
-        height: 100vh;
-        transition: .3s ease;
+  .header-nav {
+    padding: 63px 44px;
+    position: fixed;
+    top: 0;
+    left: 100%;
+    background-color: white;
+    z-index: 100;
+    width: 80vw;
+    height: 100vh;
+    transition: 0.3s ease;
 
-        // &:before {
-        //     content: "";
-        //     display: block;
-        //     position: fixed;
-        //     z-index: -1;
-        //     background-color: rgba($color: #000000, $alpha: 0.5);
-        //     width: 100vw;
-        //     height: 100vh;
-        //     top: 0;
-        //     left: 0;
-        // }
-        &--open {
-            left: 20vw;
-
-        }
-        &__overflow {
-            display: block;
-            position: fixed;
-            z-index: 90;
-            background-color: rgba($color: #000000, $alpha: 0.5);
-            width: 100vw;
-            height: 100vh;
-            top: 0;
-            left: -100%;
-        
+    // &:before {
+    //     content: "";
+    //     display: block;
+    //     position: fixed;
+    //     z-index: -1;
+    //     background-color: rgba($color: #000000, $alpha: 0.5);
+    //     width: 100vw;
+    //     height: 100vh;
+    //     top: 0;
+    //     left: 0;
+    // }
+    &--open {
+      left: 20vw;
     }
-    &__overflow--open  {
-        left: 0;
+    &__overflow {
+      display: block;
+      position: fixed;
+      z-index: 90;
+      background-color: rgba($color: #000000, $alpha: 0.5);
+      width: 100vw;
+      height: 100vh;
+      top: 0;
+      left: -100%;
     }
-
-        ul {
-            display: flex;
-            flex-direction: column;
-            gap: 20px;
-            align-items: start;
-            padding: 0;
-            overflow-y: auto;
-            position: relative;
-            z-index: 110;
-            a {
-                color: $secondary;
-                text-decoration: none;
-                font-weight: 500;
-                font-size: 24px;
-            }
-        }
+    &__overflow--open {
+      left: 0;
     }
 
-    .header-burger {
-        display: block;
-        position: relative;
-        z-index: 150;
-        transition: .3s ease;
+    ul {
+      display: flex;
+      flex-direction: column;
+      gap: 20px;
+      align-items: start;
+      padding: 0;
+      overflow-y: auto;
+      position: relative;
+      z-index: 110;
+      a {
+        color: $secondary;
+        text-decoration: none;
+        font-weight: 500;
+        font-size: 24px;
+      }
+    }
+  }
 
-        &__close-icon {
-            display: none;
-        }
+  .header-burger {
+    display: block;
+    position: relative;
+    z-index: 150;
+    transition: 0.3s ease;
 
-        &__open-icon {
-            display: block;
-        }
-
-        &--open {
-            transition: .3s ease;
-            // position: absolute;
-            // top: 73px;
-            // right: 70px;
-        }
-
-        &--open &__close-icon {
-            display: block;
-        }
-
-        &--open &__open-icon {
-            display: none;
-        }
+    &__close-icon {
+      display: none;
     }
 
-    .header {
-        
+    &__open-icon {
+      display: block;
     }
 
+    &--open {
+      transition: 0.3s ease;
+      // position: absolute;
+      // top: 73px;
+      // right: 70px;
+    }
 
+    &--open &__close-icon {
+      display: block;
+    }
+
+    &--open &__open-icon {
+      display: none;
+    }
+  }
+
+  .header {
+  }
+}
+
+.hidden-nav {
+  position: fixed;
+  top: 0;
+  left: -100%;
+  z-index: 100;
+  /* left: -100%; */
+  width: 100vw;
+  height: 100vh;
+  /* width: 100%; */
+  background-color: white;
+  padding: 50px 20px 20px 15px;
+  transition: .2s ease;
+  &--open {
+    left: 0;
+    transition: .2s ease;
+  }
+  ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+  }
 }

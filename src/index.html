@@ -1,19 +1,928 @@
 <!DOCTYPE html>
 <html lang="ru">
-  @@include('html/head.html', { 'title': 'Главная' })
+  @@include('html/head.html', { 'title': 'YANDEXRENT' })
   <body class="page">
-    @@include('html/header.html', { })
+    <!-- @@include('html/header.html', { }) -->
+    <header>
+      <div class="container-xl py-10 py-lg-15">
+        <div
+          class="d-flex justify-content-between align-items-start align-items-lg-center gap-10"
+        >
+          <!-- <button class="hamburger d-block d-lg-none" id="mobile-menu-btn">
+            <div class="btn__hamb btn__hamb--triangle-inverce">
+              <div></div>
+            </div>
+          </button> -->
+          <div class="header-burger">
+            <img
+              class="header-burger__open-icon"
+              src="./images/open.svg"
+              alt=""
+            />
+            <img
+              class="header-burger__close-icon"
+              src="./images/close.svg"
+              alt=""
+            />
+          </div>
+          <nav class="hidden-nav">
+            <ul>
+              <li>
+                <a
+                  href=""
+                  class="text-muted"
+                  data-bs-toggle="modal"
+                  data-bs-target="#formModal"
+                  >Сотрудничество</a
+                >
+              </li>
+              <li>
+                <a href="https://yandex-rent.ru/reg" class="text-muted"
+                  >Бесплатная регистрация</a
+                >
+              </li>
+              <li>
+                <a href="https://yandex-rent.ru/auth" class="text-muted"
+                  >Войти</a
+                >
+              </li>
+            </ul>
+          </nav>
+          <div class="d-flex flex-column align-items-center">
+            <img class="mwx-140 mwx-xl-200" src="./images/logo.svg" alt="" />
+            <span class="fsc-9 fsc-lg-14"
+              >Аренда транспорта <span class="fw-bold">v.0.1.9</span>
+            </span>
+          </div>
+          <div
+            class="d-flex align-items-center gap-10 gap-xl-30 flex-column flex-xl-row"
+          >
+            <span
+              class="text-muted text-decoration-underline fsc-12 fsc-lg-14 fw-medium cursor-pointer d-none d-xl-inline-block"
+              data-bs-toggle="modal"
+              data-bs-target="#formModal"
+              >Сотрудничество</span
+            >
+            <a
+              class="btn btn-primary fw-medium fsc-14 d-none d-xl-inline-block"
+              style="color: #1d1e2c; padding: 12px 35px"
+              href="https://yandex-rent.ru/reg"
+            >
+              Бесплатная регистрация
+            </a>
+            <a
+              href="https://yandex-rent.ru/auth"
+              class="d-flex gap-10 align-items-center text-decoration-none"
+            >
+              <img src="./images/person.svg" width="22" alt="" />
+              <span
+                class="d-none d-xl-inline-block"
+                style="color: #1d1e2c; font-weight: 600; font-size: 12px"
+                >Войти</span
+              >
+            </a>
+          </div>
+        </div>
+      </div>
+    </header>
     <main>
       <section>
-        
+        <div class="container-xl">
+          <div
+            class="d-flex py-15 py-xl-30 flex-column flex-xl-row align-items-center justify-content-between"
+          >
+            <div
+              class="d-flex flex-column gap-5 gap-xl-20 text-center text-xl-start wp-100 wp-xl-35"
+            >
+              <p class="fw-bold fsc-32 fsc-xl-50 mb-0 new-line-height">
+                ОДИН ЗА ВСЕХ, <br />
+                И ВСЕ ЗА ОДНОГО
+              </p>
+              <span class="fsc-16 fsc-xl-24 second-line-height"
+                >Вы сдаете транспорт всех. <br />
+                Все сдают транспорт Ваш.</span
+              >
+            </div>
+            <div class="wp-100 wp-xl-65">
+              <img src="./images/group.png" class="wp-100" alt="" />
+            </div>
+          </div>
+        </div>
       </section>
-      @@include('html/first-layout.html', { })
-      @@include('html/num-section.html', { })
-      @@include('html/description.html', { })
-      @@include('html/portfolio.html', { })
-      @@include('html/we-develop.html', { })
+      <section class="d-none d-lg-block">
+        <div class="mx-auto" style="max-width: 1276px">
+          <div class="bg-primary py-xl-35 py-25">
+            <div class="">
+              <h2
+                class="fw-normal fw-xl-normal fsc-xl-24 fsc-18 text-center mb-0 idiots-line-height"
+              >
+                Одна страна. Одна отрасль. Одна база объектов. Одна CRM.
+              </h2>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="d-block d-lg-none">
+        <div class="mx-auto" style="max-width: 1276px">
+          <div class="bg-primary py-xl-35 py-25">
+            <div class="">
+              <h2
+                class="fw-normal fw-xl-normal fsc-xl-24 fsc-18 text-center mb-0 idiots-line-height"
+              >
+                Одна страна. Одна отрасль. <br />
+                Одна база объектов. <br />
+                Одна CRM.
+              </h2>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section>
+        <div class="container-xl pt-15 pt-xl-50">
+          <h2
+            class="mb-15 mb-lg-30 fsc-lg-36 fsc-24 fw-bold fsc-18 fsc-xl-24 fw-xl-bold text-center"
+          >
+            YANDEXRENT CRM. ОТРАСЛЕВАЯ ЦИФРОВАЯ ПЛАТФОРМА.
+          </h2>
+          <div class="d-flex d-xl-none mb-15 justify-content-center">
+            <a
+              href="https://yandex-rent.ru/reg"
+              class="btn btn-primary fw-medium fsc-14 order-lg-last order-first"
+            >
+              Бесплатная регистрация
+            </a>
+          </div>
+          <div
+            class="custom-pagination align-items-start d-flex justify-content-center gap-30"
+          >
+            <div class="d-block d-lg-none prev-btn mt-5">
+              <img src="./images/btn-34.svg" alt="" />
+            </div>
+            <ul class="custom-pagination__ul">
+              <li>Главное</li>
+              <li>Транспорт</li>
+              <li>Клиенты</li>
+              <li>Безопасность</li>
+              <li>Сотрудники</li>
+            </ul>
+            <div class="d-block d-lg-none next-btn mt-5">
+              <img src="./images/btn-35.svg" alt="" />
+            </div>
+          </div>
+          <div class="swiper-slider overflow-hidden main-slider">
+            <div class="swiper-wrapper">
+              <div class="swiper-slide">
+                <div
+                  class="d-flex flex-column flex-lg-row align-items-center gap-lg-0 gap-10 py-15 py-lg-30"
+                >
+                  <ul class="fw-normal fsc-18 list-custom wp-lg-45">
+                    <li class="fsc-14 fw-normal mb-10 fsc-lg-18 fw-lg-normal">
+                      Бесплатно
+                    </li>
+                    <li class="fsc-14 fw-normal mb-10 fsc-lg-18 fw-lg-normal">
+                      Онлайн с любого места. ПК или планшет
+                    </li>
+                    <li class="fsc-14 fw-normal mb-10 fsc-lg-18 fw-lg-normal">
+                      Легковой, Коммерческий, Мотоциклы, Автодома, Прицепы
+                    </li>
+                    <li class="fsc-14 fw-normal mb-10 fsc-lg-18 fw-lg-normal">
+                      Воздушный, Водный, Спецтехника, Эвакуаторы
+                    </li>
+                    <li class="fsc-14 fw-normal mb-10 fsc-lg-18 fw-lg-normal">
+                      Контроль аренды Без экипажа, С экипажем, С выкупом
+                    </li>
+                    <li class="fsc-14 fw-normal mb-10 fsc-lg-18 fw-lg-normal">
+                      100% рутины автоматизировано-никаких «рук»
+                    </li>
+                    <li class="fsc-14 fw-normal mb-10 fsc-lg-18 fw-lg-normal">
+                      100% загрузка парка – поток заказов для 1100 городов РФ
+                    </li>
+                    <li class="fsc-14 fw-normal mb-10 fsc-lg-18 fw-lg-normal">
+                      Открытая аналитика спроса по 1100 городам РФ
+                    </li>
+                    <li class="fsc-14 fw-normal mb-10 fsc-lg-18 fw-lg-normal">
+                      100% безопасность – проверка клиентов уже внутри
+                    </li>
+                    <li class="fsc-14 fw-normal mb-10 fsc-lg-18 fw-lg-normal">
+                      Открытый API - связь с вашими сайтами
+                    </li>
+                  </ul>
+                  <div class="wp-lg-55">
+                    <img class="wp-100" src="./images/wewfw.png" alt="" />
+                  </div>
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div
+                  class="d-flex flex-column flex-lg-row align-items-center gap-lg-0 gap-10 py-15 py-lg-30"
+                >
+                  <ul class="fw-normal fsc-18 list-custom wp-lg-45">
+                    <li class="fsc-14 fw-normal mb-10 fsc-lg-18 fw-lg-normal">
+                      Автоматический контроль событий по датам и пробегу
+                    </li>
+                    <li class="fsc-14 fw-normal mb-10 fsc-lg-18 fw-lg-normal">
+                      Автоматическая активация статуса «Карантин» (не готов)
+                    </li>
+                    <li class="fsc-14 fw-normal mb-10 fsc-lg-18 fw-lg-normal">
+                      Заказ полисов ОСАГО, КАСКО, ЗЧ в 1 клик
+                    </li>
+                    <li class="fsc-14 fw-normal mb-10 fsc-lg-18 fw-lg-normal">
+                      Заказ посуточного КАСКО для легкового сегмента
+                    </li>
+                    <li class="fsc-14 fw-normal mb-10 fsc-lg-18 fw-lg-normal">
+                      Наблюдение за объектами на карте и блокировка двигателей
+                    </li>
+                    <li class="fsc-14 fw-normal mb-10 fsc-lg-18 fw-lg-normal">
+                      Штрафы, Платные дороги, ФССП - все уже внутри
+                    </li>
+                    <li class="fsc-14 fw-normal mb-10 fsc-lg-18 fw-lg-normal">
+                      Отмена крупных (от 100 т.р.) штрафов ГИБДД на ЮЛ в 1 клик
+                    </li>
+                    <li class="fsc-14 fw-normal mb-10 fsc-lg-18 fw-lg-normal">
+                      Контроль остатков склада с датой инвентаризации
+                    </li>
+                  </ul>
+                  <div class="wp-lg-55">
+                    <img class="wp-100" src="./images/wewfw.png" alt="" />
+                  </div>
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div
+                  class="d-flex flex-column flex-lg-row align-items-center gap-lg-0 gap-10 py-15 py-lg-30"
+                >
+                  <ul class="fw-normal fsc-18 list-custom wp-lg-45">
+                    <li class="fsc-14 fw-normal mb-10 fsc-lg-18 fw-lg-normal">
+                      Поток клиентов от агрегаторов-партнеров YANDEXRENT
+                    </li>
+                    <li class="fsc-14 fw-normal mb-10 fsc-lg-18 fw-lg-normal">
+                      Продажа своих заявок системе с комиссией 5% за успех
+                    </li>
+                    <li class="fsc-14 fw-normal mb-10 fsc-lg-18 fw-lg-normal">
+                      Онлайн календарь загрузки – мгновенные консультации
+                    </li>
+                    <li class="fsc-14 fw-normal mb-10 fsc-lg-18 fw-lg-normal">
+                      ФЛ и ЮЛ в одной базе. Автопечать доверенностей на ТС ЮЛ
+                    </li>
+                    <li class="fsc-14 fw-normal mb-10 fsc-lg-18 fw-lg-normal">
+                      Онлайн оплата в 1 клик для ваших клиентов (комиссия 5%)
+                    </li>
+                    <li class="fsc-14 fw-normal mb-10 fsc-lg-18 fw-lg-normal">
+                      Авто-SMS оповещения о событиях: резерв, выдача, долг и
+                      т.д.
+                    </li>
+                    <li class="fsc-14 fw-normal mb-10 fsc-lg-18 fw-lg-normal">
+                      ЛК клиента с историей заказов, штрафов, начислений и оплат
+                    </li>
+                    <li class="fsc-14 fw-normal mb-10 fsc-lg-18 fw-lg-normal">
+                      Срок верификации (актуальности проверки) клиентов
+                    </li>
+                    <li class="fsc-14 fw-normal mb-10 fsc-lg-18 fw-lg-normal">
+                      Контроль качества каждой поездки. Рейтинги ТС
+                    </li>
+                  </ul>
+                  <div class="wp-lg-55">
+                    <img class="wp-100" src="./images/wewfw.png" alt="" />
+                  </div>
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div
+                  class="d-flex flex-column flex-lg-row align-items-center gap-lg-0 gap-10 py-15 py-lg-30"
+                >
+                  <ul class="fw-normal fsc-18 list-custom wp-lg-45">
+                    <li class="fsc-14 fw-normal mb-10 fsc-lg-18 fw-lg-normal">
+                      Проверка ФЛ и ЮЛ по платным базам в один клик
+                    </li>
+                    <li class="fsc-14 fw-normal mb-10 fsc-lg-18 fw-lg-normal">
+                      Ручная проверка ФЛ и ЮЛ по алгоритмам СБ YANDEXRENT
+                    </li>
+                    <li class="fsc-14 fw-normal mb-10 fsc-lg-18 fw-lg-normal">
+                      Настройка своего алгоритма проверки ФЛ и ЮЛ
+                    </li>
+                    <li class="fsc-14 fw-normal mb-10 fsc-lg-18 fw-lg-normal">
+                      Глобальный черный список клиентов РФ
+                    </li>
+                    <li class="fsc-14 fw-normal mb-10 fsc-lg-18 fw-lg-normal">
+                      Наблюдение за объектами на карте и блокировка двигателей
+                    </li>
+                    <li class="fsc-14 fw-normal mb-10 fsc-lg-18 fw-lg-normal">
+                      Функция "SOS"-помощь в любом городе от пользователей
+                    </li>
+                    <li class="fsc-14 fw-normal mb-10 fsc-lg-18 fw-lg-normal">
+                      Контроль должников в отдельном разделе. Суды
+                    </li>
+                    <li class="fsc-14 fw-normal mb-10 fsc-lg-18 fw-lg-normal">
+                      Продажа ваших должников коллекторам в 1 клик
+                    </li>
+                  </ul>
+                  <div class="wp-lg-55">
+                    <img class="wp-100" src="./images/wewfw.png" alt="" />
+                  </div>
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div
+                  class="d-flex flex-column flex-lg-row align-items-center gap-lg-0 gap-10 py-15 py-lg-30"
+                >
+                  <ul class="fw-normal fsc-18 list-custom wp-lg-45">
+                    <li class="fsc-14 fw-normal mb-10 fsc-lg-18 fw-lg-normal">
+                      Сотрудник имеет права клиента с допуском в CRM
+                    </li>
+                    <li class="fsc-14 fw-normal mb-10 fsc-lg-18 fw-lg-normal">
+                      График сотрудников. Мгновенный обмен сменами
+                    </li>
+                    <li class="fsc-14 fw-normal mb-10 fsc-lg-18 fw-lg-normal">
+                      Функция ЗРС – обращения к ген. директору онлайн
+                    </li>
+                    <li class="fsc-14 fw-normal mb-10 fsc-lg-18 fw-lg-normal">
+                      Функция Приказы – постановка и контроль приказов онлайн
+                    </li>
+                    <li class="fsc-14 fw-normal mb-10 fsc-lg-18 fw-lg-normal">
+                      Оргполитика – раздел с инструкциями и файлами
+                    </li>
+                    <li class="fsc-14 fw-normal mb-10 fsc-lg-18 fw-lg-normal">
+                      Общая телефонная книга паролей
+                    </li>
+                    <li class="fsc-14 fw-normal mb-10 fsc-lg-18 fw-lg-normal">
+                      Академия аренды YANDEXRENT - обучение аренде
+                    </li>
+                  </ul>
+                  <div class="wp-lg-55">
+                    <img class="wp-100" src="./images/wewfw.png" alt="" />
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section>
+        <div class="mx-auto" style="max-width: 1276px">
+          <div class="bg-primary  py-35 px-15">
+            <h2 class="fw-normal fw-xl-normal fsc-xl-24 fsc-18 text-center mb-0 idiots-line-height" >
+              Больше, чем самая совершенная CRM.  <br class="d-inline d-xl-none"/> Это новый уровень бизнеса.
+            </h2>
+          </div>
+        </div>
+      </section>
+      <section>
+        <div class="container-xl py-15 py-xl-50">
+          <h2
+            class="mb-15 mb-lg-30 fw-medium fsc-18 fsc-xl-24 fw-xl-bold text-center"
+          >
+            YANDEXRENT – ГЛАВНОЕ ОБЛАКО ОТРАСЛИ АРЕНДЫ ТРАНСПОРТА
+          </h2>
+          <div
+            class="d-flex align-items-center px-30 px-md-0 mx-auto"
+            style="max-width: 930px"
+          >
+            <img
+              src="./images/first-desc.png"
+              class="d-none d-md-inline-block wp-100"
+              alt=""
+            />
+            <img
+              src="./images/first-mobile.png"
+              class="d-inline-block d-md-none wp-100"
+              alt=""
+            />
+          </div>
+        </div>
+      </section>
+      <section>
+        <div class="mx-auto" style="max-width: 1276px">
+          <div class="bg-primary py-xl-35 py-25 px-15">
+            <h2 class="fw-normal fw-xl-normal fsc-xl-24 fsc-18 text-center mb-0 idiots-line-height">
+              Все участники работают на одной  <br class="d-inline d-xl-none"/> отраслевой цифровой платформе<br class="d-inline d-xl-none"/>
+              <span class="fw-xl-bold fw-medium">YANDEXRENT</span>
+            </h2>
+          </div>
+        </div>
+      </section>
+      <section>
+        <div class="container-xl py-15 py-xl-50">
+          <h2
+            class="mb-15 mb-lg-30 fw-medium fsc-18 fsc-xl-24 fw-xl-bold text-center"
+          >
+            Какие проблемы решает <br class="d-inline d-xl-none"/> CRM YANDEXRENT
+          </h2>
+          <div class="" style="max-width: 1050px; margin: auto">
+            <ul class="fw-normal fsc-18 list-custom mb-25 mb-lg-40">
+              <li class="mb-10 mb-lg-20 fw-normal fw-lg-normal fsc-14 fsc-lg-18">
+                Контролирует 99% ежедневной рутины. Все повторяющиеся задачи
+                выполняет робот.
+              </li>
+              <li class="mb-10 mb-lg-20 fw-normal fw-lg-normal fsc-14 fsc-lg-18">
+                С первого дня экономит до 50% затрат на содержание арендного
+                бизнеса.
+              </li>
+              <li class="mb-10 mb-lg-20 fw-normal fw-lg-normal fsc-14 fsc-lg-18">
+                На 1000% увеличивает скорость работы. Большинство операций
+                делается в 1 клик.
+              </li>
+              <li class="mb-10 mb-lg-20 fw-normal fw-lg-normal fsc-14 fsc-lg-18">
+                Исключает 99% ошибок сотрудников. Система перепроверяет все
+                данные и не даст случайно ошибиться.
+              </li>
+              <li class="mb-10 mb-lg-20 fw-normal fw-lg-normal fsc-14 fsc-lg-18">
+                Исключает на 99% риск любого воровства сотрудниками. Все
+                потенциальные точки воровства под контролем робота.
+              </li>
+              <li class="mb-10 mb-lg-20 fw-normal fw-lg-normal fsc-14 fsc-lg-18">
+                Исключает 99% риска угонов или криминала со стороны клиентов - 5
+                ступеней защиты.
+              </li>
+              <li class="mb-10 mb-lg-20 fw-normal fw-lg-normal fsc-14 fsc-lg-18">
+                На 99% загружает любой транспорт клиентами благодаря агрегаторам
+                на платформе.
+              </li>
+              <li class="mb-10 mb-lg-20 fw-normal fw-lg-normal fsc-14 fsc-lg-18">
+                На 99% решает вопрос неотработанных заявок. Продайте системе
+                любой ваш заказ за 5% в 1 клик.
+              </li>
+              <li class="mb-10 mb-lg-20 fw-normal fw-lg-normal fsc-14 fsc-lg-18">
+                На 99% поможет с поиском вашего ТС в другом городе - вам помогут
+                другие пользователи системы.
+              </li>
+            </ul>
+            <div
+              class="ps-0 ps-lg-20 fsc-14 fsc-lg-20 text-center text-lg-start"
+            >
+              Мы уверены в YANDEXRENT на 100%.<br class="d-inline d-xl-none"/> Скептикам мы дарим 1% по каждому
+              пункту.
+            </div>
+          </div>
+        </div>
+      </section>
+      <section>
+        <div class="mx-auto" style="max-width: 1276px">
+          <div class="bg-primary py-xl-35 py-25 px-15">
+            <h2 class="fw-normal fw-xl-normal fsc-xl-24 fsc-18 text-center mb-0 idiots-line-height">
+              <span class="fw-xl-bold fw-medium">YANDEXRENT</span> помогает,
+              экономит, <br class="d-inline d-xl-none"/>  ускоряет, защищает, улучшает,<br class="d-inline d-xl-none"/>  развивает и поддерживает
+              <span class="fw-xl-bold fw-medium">24/7</span>
+            </h2>
+          </div>
+        </div>
+      </section>
+      <section>
+        <div class="container-xl py-15 py-xl-50">
+          <h2
+            class="mb-15 mb-lg-30 fw-medium fsc-18 fsc-xl-24 fw-xl-bold text-center idiots-line-height"
+          >
+            АГРЕГАТОРЫ И ПОЛЬЗОВАТЕЛИ YANDEXRENT ЕЖЕМИНУТНО РЕГИСТРИРУЮТ ЗАКАЗЫ
+            СО ВСЕЙ РОССИИ. ИСПОЛЬЗУЙТЕ ЭТО С ФУНКЦИЕЙ YANDEXRENT GLOBAL
+          </h2>
+          <div class="row gy-15 gx-30">
+            <div class="col-lg-4">
+              <div class="text-center p-15 border rounded-10 h-100" style="border-color: #0056AF;">
+                <span class="fw-medium fsc-lg-18"
+                  >YANDEXRENT GLOBAL START (YGS)</span
+                >
+                <div class="mb-15 mt-15">
+                  <img class="wp-100" src="./images/map-1.png" alt="" />
+                </div>
+                <div class="fsc-14">
+                  <span class="fw-medium"
+                    >Получайте крупные заказы (30/180/360 суток)</span
+                  >
+                  <p class="fw-normal mb-0">
+                    с началом/завершением аренды в соседнем городе – укажите
+                    радиус и доставьте ваш объект клиенту.
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-4">
+              <div class="text-center p-15 border rounded-10 h-100" style="border-color: #0056AF;">
+                <span class="fw-medium fsc-lg-18"
+                  >YANDEXRENT GLOBAL FINISH (YGF)</span
+                >
+                <div class="mb-15 mt-15">
+                  <img class="wp-100" src="./images/map-2.png" alt="" />
+                </div>
+                <div class="fsc-14">
+                  <span class="fw-medium"
+                    >Получайте крупные заказы (30/180/360 суток)</span
+                  >
+                  <p class="fw-normal mb-0">
+                    с завершением аренды в соседнем городе – укажите радиус и
+                    заберите после аренды ваш объект.
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-4">
+              <div class="text-center p-15 border rounded-10 h-100" style="border-color: #0056AF;">
+                <span class="fw-medium fsc-lg-18"
+                  >YANDEXRENT GLOBAL TRANSIT (YGT)</span
+                >
+                <div class="mb-15 mt-15">
+                  <img class="wp-100" src="./images/map-3.png" alt="" />
+                </div>
+                <div class="fsc-14">
+                  <span class="fw-medium"
+                    >Включите функцию перемещения вашего объекта
+                  </span>
+                  <p class="fw-normal mb-0">
+                    в зоны высокого спроса (загрузка 85%+). Система будет
+                    автоматически искать заказы с возвратом только в "зеленой
+                    зоне".
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section>
+        <div class="mx-auto" style="max-width: 1276px">
+          <div class="bg-primary py-xl-35 py-10">
+            <div class="mwx-245 mwx-md-none mx-auto">
+              <h2
+                class="fw-normal fw-xl-normal fsc-xl-24 fsc-18 text-center mb-0 idiots-line-height"
+              >
+                СДАВАЙТЕ СВОИ ОБЪЕКТЫ <br class="d-inline d-xl-none"/>  НЕ ТАМ ГДЕ ВАМ УДОБНО,<br />
+                <span class="fw-xl-bold fw-medium"
+                  >А ТАМ ГДЕ ЕСТЬ ЗАКАЗЫ <br class="d-inline d-xl-none"/>  ПРЯМО СЕЙЧАС</span
+                >
+              </h2>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section>
+        <div class="container-xl py-15 py-xl-50">
+          <h2
+            class="mb-15 mb-lg-30 fw-medium fsc-18 fsc-xl-24 fw-xl-bold text-center"
+          >
+            КАК ЗАРАБАТЫВАТЬ БОЛЬШЕ, ИСПОЛЬЗУЯ YANDEXRENT
+          </h2>
+          <div class="row gy-15 gy-lg-30 gx-30">
+            <div class="col-lg-4">
+              <div
+                class="h-100 p-15 border border-dark rounded-10 d-flex flex-column position-relative"
+              >
+                <div
+                  class="position-absolute rounded-circle bg-primary d-flex justify-content-center align-items-center fsc-14 fw-medium"
+                  style="width: 40px; height: 40px; top: 3px; right: 3px"
+                >
+                  1
+                </div>
+                <div class="d-flex gap-15 align-items-center mb-10">
+                  <img src="./images/Frame241.svg" alt="" /><span
+                    class="fsc-lg-18 fw-medium"
+                    >Владелец
+                  </span>
+                </div>
+                <p class=" fsc-14 mb-10 flex-grow-1">
+                  Покупайте объекты по рекомендациям аналитики и передавайте на
+                  открытые площадки в городах высокого спроса.
+                </p>
+                <div
+                  class="bg-secondary py-10 fw-medium fsc-14 text-center rounded-5 text-white"
+                >
+                  Ваши 70% оборота
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-4">
+              <div
+                class="h-100 p-15 border border-dark rounded-10 d-flex flex-column position-relative"
+              >
+                <div
+                  class="position-absolute rounded-circle bg-primary d-flex justify-content-center align-items-center fsc-14 fw-medium"
+                  style="width: 40px; height: 40px; top: 3px; right: 3px"
+                >
+                  2
+                </div>
+                <div class="d-flex gap-15 align-items-center mb-10">
+                  <img src="./images/Frame241-1.svg" alt="" /><span
+                    class="fsc-lg-18 fw-medium"
+                    >Площадка
+                  </span>
+                </div>
+                <p class=" fsc-14 mb-10 flex-grow-1">
+                  Создавайте открытые площадки и управляйте объектами владельцев
+                  (даже от 1 объекта).
+                </p>
+                <div
+                  class="bg-secondary py-10 fw-medium fsc-14 text-center rounded-5 text-white"
+                >
+                  Ваши 10% оборота
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-4">
+              <div
+                class="h-100 p-15 border border-dark rounded-10 d-flex flex-column position-relative"
+              >
+                <div
+                  class="position-absolute rounded-circle bg-primary d-flex justify-content-center align-items-center fsc-14 fw-medium"
+                  style="width: 40px; height: 40px; top: 3px; right: 3px"
+                >
+                  3
+                </div>
+                <div class="d-flex gap-15 align-items-center mb-10">
+                  <img src="./images/Frame241-2.svg" alt="" /><span
+                    class="fsc-lg-18 fw-medium"
+                    ><span style="line-height: 100%">Прокат</span> <br />
+                    <span class="fsc-14"> (владелец и площадка 2 в 1)</span>
+                  </span>
+                </div>
+                <p class=" fsc-14 mb-10 flex-grow-1">
+                  Покупайте и управляйте своими объектами. Также можно сделать
+                  свою площадку открытой и управлять чужими объектами за 10% от
+                  оборота.
+                </p>
+                <div
+                  class="bg-secondary py-10 fw-medium fsc-14 text-center rounded-5 text-white"
+                >
+                  Ваши 80% оборота внешних заказов
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-4">
+              <div
+                class="h-100 p-15 border border-dark rounded-10 d-flex flex-column position-relative"
+              >
+                <div
+                  class="position-absolute rounded-circle bg-primary d-flex justify-content-center align-items-center fsc-14 fw-medium"
+                  style="width: 40px; height: 40px; top: 3px; right: 3px"
+                >
+                  4
+                </div>
+                <div class="d-flex gap-15 align-items-center mb-10">
+                  <img src="./images/Frame241-3.svg" alt="" /><span
+                    class="fsc-lg-18 fw-medium"
+                    >Агрегатор (источник <br class="d-inline d-xl-none"/>  заказов)
+                  </span>
+                </div>
+                <p class=" fsc-14 mb-10 flex-grow-1">
+                  Дайте рекламу в любом городе России, принимайте заказы и
+                  продавайте аренду свободных объектов в системе.
+                </p>
+                <div
+                  class="bg-secondary py-10 fw-medium fsc-14 text-center rounded-5 text-white"
+                >
+                  Ваши 5% от оборота
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-4">
+              <div
+                class="h-100 p-15 border border-dark rounded-10 d-flex flex-column position-relative"
+              >
+                <div
+                  class="position-absolute rounded-circle bg-primary d-flex justify-content-center align-items-center fsc-14 fw-medium"
+                  style="width: 40px; height: 40px; top: 3px; right: 3px"
+                >
+                  5
+                </div>
+                <div class="d-flex gap-15 align-items-center mb-10">
+                  <img src="./images/Frame241-4.svg" alt="" /><span
+                    class="fsc-lg-18 fw-medium"
+                    >Интегратор
+                  </span>
+                </div>
+                <p class=" fsc-14 mb-10 flex-grow-1">
+                  Купите лицензию Интегратора и подключайте в <br class="d-inline d-xl-none"/> CRM YANDEXRENT
+                  владельцев транспорта.
+                </p>
+                <div
+                  class="bg-secondary py-10 fw-medium fsc-14 text-center rounded-5 text-white"
+                >
+                  Ваши 2-4% от их оборота бессрочно
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-4">
+              <div
+                class="h-100 p-15 border border-dark rounded-10 d-flex flex-column position-relative"
+              >
+                <div
+                  class="position-absolute rounded-circle bg-primary d-flex justify-content-center align-items-center fsc-14 fw-medium"
+                  style="width: 40px; height: 40px; top: 3px; right: 3px"
+                >
+                  6
+                </div>
+                <div class="d-flex gap-15 align-items-center mb-10">
+                  <img src="./images/Frame241-5.svg" alt="" /><span
+                    class="fsc-lg-18 fw-medium"
+                    >Все в одном
+                  </span>
+                </div>
+                <ul class=" fsc-14 mb-10 flex-grow-1">
+                  <li>Купите объекты</li>
+                  <li>Создайте открытую площадку</li>
+                  <li>Дайте рекламу по аренде</li>
+                  <li>Купите лицензию интегратора</li>
+                </ul>
+                <div
+                  class="bg-secondary py-10 fw-medium fsc-14 text-center rounded-5 text-white"
+                >
+                  Используйте все возможности на максимум.
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="d-flex d-xl-none mt-15 justify-content-center">
+            <a
+              href="https://yandex-rent.ru/reg"
+              class="btn btn-primary fw-medium fsc-14 order-lg-last order-first"
+            >
+              Получить бесплатно
+            </a>
+          </div>
+        </div>
+      </section>
+      <section>
+        <div class="mx-auto" style="max-width: 1276px">
+          <div class="bg-primary">
+            <div
+              class="mwx-315 mwx-md-none mx-auto bg-primary py-xl-35 py-15 px-15"
+            >
+              <h2
+                class="fw-normal fw-xl-normal fsc-xl-24 fsc-18 text-center mb-0 idiots-line-height"
+              >
+                СДАВАЙТЕ ТРАНСПОРТ <br class="d-inline d-xl-none"/>  В СВОЕМ ГОРОДЕ. <br />
+                ИЛИ РАБОТАЙТЕ В МАСШТАБАХ <br class="d-inline d-xl-none"/>  СТРАНЫ С
+                <span class="fw-xl-bold fw-medium">YANDEXRENT</span>
+              </h2>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section>
+        <div class="container-xl py-xl-50 py-15 fsc-14 fsc-lg-16 fw-normal">
+          <div style="text-align: justify">
+            <p class="mb-lg-25 mb-15">
+              YANDEXRENT – отраслевая цифровая платформа аренды транспорта
+              России. YANDEXRENT – крупнейшая бесплатная онлайн CRM-система для
+              контроля аренды транспорта. На платформе YANDEXRENT работают все
+              участники рынка аренды: агрегаторы с клиентами, владельцы
+              транспорта (от 1 объекта), малые и большие площадки для транспорта
+              (управляющие компании), информационные партнеры (ГИБДД, АВТОДОР,
+              ФССП, GPS мониторинг, SMS рассылки, Онлайн-Эквайринг, Базы данных
+              ФЛ и ЮЛ) и партнеры: юристы по взысканию долгов, юристы по отмене
+              штрафов, поставщики автозапчастей, автосервисы, страховые компании
+              (полисы ОСАГО/КАСКО + посуточное КАСКО (NEW). Список партнеров
+              сервиса постоянно растет. На платформе YANDEXRENT контролируется
+              более 1 миллиона объектов из 1100 городов России.
+            </p>
+            <p class="mb-lg-25 mb-15">
+              Другие CRM для автопроката - это закрытые локальные программы для
+              учета аренды (программы для учета проката), работающие «сами по
+              себе» и не обменивающиеся данными с рынком. Онлайн CRM YANDEXRENT
+              ежесекундно обменивается данными со всеми пользователями,
+              например:<br /><br />
+              -бесплатная функция «Черный список клиентов автопрокатов». Стоит
+              любому прокату, например, в Казани, поставить клиенту галочку
+              «Черный список» - теперь вся Россия, от Калининграда до Анадыря,
+              видит этого клиента (а также название и телефон проката-инициатора
+              ЧС и суть претензии) и не доверит ему транспорт, пока клиент не
+              компенсирует ущерб прокату-инициатору ЧС. И только
+              прокат-инициатор может снять у клиента статус «Черный список».
+              Более того, YANDEXRENT автоматически переносит любого клиента в
+              Черный список клиентов прокатов, если срок его задолженности
+              превысил 30 дней.
+            </p>
+            <p class="mb-lg-25 mb-15">
+              -бесплатная функция «Глобальная аналитика спроса». Все агрегаторы,
+              все пользователи добавляют в систему YANDEXRENT тысячи заказов
+              каждый час. Любой пользователь YANDEXRENT может просматривать
+              аналитику спроса по всей России по кластерам, чтобы перемещать
+              свой транспорт в зоны высокого спроса и «не стоять в родном
+              регионе». Кластер – это группа транспорта с одинаковыми
+              параметрами, например: Кластер 23 (седан, автомат, кондиционер,
+              цена закупки 600-999 т.р.) или Кластер 44 (минивэн, автомат,
+              кондиционер, цена закупки 2-3 млн.р.).
+            </p>
+            <p class="mb-lg-35 mb-25">
+              -бесплатная функция «Продать заказ». Больше вы не потеряете ни
+              одного заказа! Благодаря тому, что YANDEXRENT – это огромная база
+              объектов для аренды по всей России, пользователи YANDEXRENT каждую
+              минуту сдают транспорт друг друга по единому безопасному
+              алгоритму. Другими словами, у всех прокатов России теперь один
+              общий парк с миллионом объектов и тысячи менеджеров, которые
+              принимают заказы друг для друга. Чтобы ваш объект видели и могли
+              сдавать другие пользователи платформы YANDEXRENT, вам нужно в
+              настройках объекта поставить галочку «Получение заказов от
+              YANDEXRENT» и выбрать, какие заказы вам нужны: Без экипажа, С
+              экипажем, с Выкупом. Если галочку не поставить - ваш объект видите
+              и сдаете только вы. Теперь не важно, в какую компанию
+              позвонил/обратился клиент, у всех пользователей YANDEXRENT одна
+              общая база транспорта, и любой прокат может создать договор аренды
+              на ваш объект, как и вы можете создать договор аренды на его
+              объект. Тот, кто «поймал заказ»,- получает 5% от оборота
+              (источник), кому принадлежит объект – 70% (владелец), а кто выдал
+              и принял объект – 10% (площадка). Комиссия системы за «партнерский
+              договор» - 15%. Разумеется, если вы создаете заказы на свои
+              объекты, комиссии системы нет.
+              <br />
+              <br />
+              Два условия, чтобы вы продали аренду «чужого» объекта:<br /><br />
+              1. Объект должен быть свободен. <br />
+              2. Клиента проверяет только лицензированная СБ YANDEXRENT
+              (проверка застрахована). <br /><br />
+              Пример 1.<br />
+              Ваш прокат находится в Орле. Вы получаете звонок «Нужен
+              внедорожник в Орле с 1 по 8 октября». Допустим, такого авто на эти
+              даты у вас нет. Но у вас есть база всего арендного транспорта
+              России (кстати, даже яхт и самолетов). Вы открываете CRM
+              YANDEXRENT, переходите в раздел «Шахматка», выбираете: Орел, Без
+              экипажа, Легковой, Даты, Тип кузова «Внедорожник». Система сначала
+              показывает вам ВАШИ объекты, потом все остальные в вашем городе.
+              Так как у вас внедорожников нет, система сразу показывает вам
+              свободные внедорожники у ваших коллег. Предлагаете клиенту все
+              варианты. К примеру, клиент выбирает LEXUS LX 570 по 15000 руб. в
+              день. Сумма заказа 105000 руб. Вы в 1 клик «замораживаете» этот
+              LEXUS LX 570 на 60 минут под своего клиента. Далее, вы в 1 клик
+              отправляете клиента на проверку в СБ YANDEXRENT. Через 15 минут
+              получаете результат. Если «ОТКАЗ» - заявка переходит в архив. Если
+              «ДОПУСК» - перезваниваете клиенту и создаете в системе договор
+              аренды (точно такой же, как на свой транспорт). Клиенту уходит
+              SMS-подтверждение, и он оплачивает аренду. На этом ваша работа с
+              клиентом завершена. Далее у проката-исполнителя (площадки, где
+              стоит LEXUS LX 570) появляется новый оплаченный договор аренды на
+              LEXUS LX 570, и прокат-исполнитель связывается с клиентом за день
+              до начала поездки. После завершения аренды по факту итоговой
+              оплаченной суммы клиентом (с учетом продления, досрочного
+              возврата, перепробега и др. услуг) система переведет вам вашу
+              комиссию 5%. В этом примере вы получили 5250 руб. за 5 минут
+              работы с телефоном и программой YANDEXRENT.<br />
+              Пример 2.<br />
+              Ваш прокат находится в Рязани. Вы получаете звонок от своего
+              действующего клиента «Нужен эконом в Новосибирске с 10 по 30
+              октября. У вас есть партнеры?». Ответ – партнеры есть. Открываем
+              Шахматку: Новосибирск, Без экипажа, Легковой, Даты, Класс «Эконом»
+              - предлагаем, проверяем, создаем, получаем свои 5%.<br />
+              Пример 3.<br />
+              У вас вообще нет транспорта в аренду в России. Вы живете в
+              Таиланде и медитируете под пальмой. Вы просто даете рекламу по
+              аренде на Авито или в директ по любым городам. Получаете звонки.
+              Схема прежняя: Шахматка-город, Тип аренды, Даты, Класс, Кузов -
+              предлагаем, проверяем, создаем, получаем свои 5%.
+            </p>
+            <p class="mb-lg-35 mb-25">
+              В отличие от других CRM / программ учета автопроката, которые
+              разрабатывались IT студиями, ни минуты не работавшими с
+              транспортом, главной целью которых является сбор абонентской
+              платы,
+              Отраслевая Цифровая Платформа YANDEXRENT
+              разрабатывалась и совершенствуется сегодня людьми, которые более
+              20 лет отдали аренде транспорта и точно знают, что и как работает
+              в реальных условиях. <br />YANDEXRENT – это не просто бесплатная
+              онлайн CRM для контроля аренды автомобилей, грузовиков,
+              мотоциклов, автодомов, прицепов, водного и воздушного транспорта,
+              спецтехники и эвакуаторов,<br />
+              YANDEXRENT- это и есть отрасль аренды транспорта. Пробуйте.
+            </p>
+          </div>
+        </div>
+      </section>
+      <footer>
+        <div class="container-xl py-15">
+          <div
+            class="d-flex flex-column flex-xl-row justify-content-between align-items-center gap-10"
+          >
+            <div class="d-flex flex-column align-items-center">
+              <img src="./images/logo.svg" alt="" />
+              <span class="fsc-14"
+                >Аренда транспорта <span class="fw-bold">v.0.1.9</span>
+              </span>
+            </div>
+            <div
+              class="d-flex align-items-center gap-10 gap-xl-30 flex-column flex-xl-row"
+            >
+              <span
+                class="text-muted text-decoration-underline fsc-12 fsc-lg-14 fw-medium cursor-pointer"
+                data-bs-toggle="modal"
+                data-bs-target="#formModal"
+                >Сотрудничество</span
+              >
+              <a
+                href="https://yandex-rent.ru/reg"
+                class="btn btn-primary fw-medium fsc-14 order-lg-last order-first"
+              >
+                Бесплатная регистрация
+              </a>
+            </div>
+            <div class="fw-normal fsc-14 text-muted text-center text-lg-end">
+              2023. Все права защищены. <br />
+              Политика конфиденциальности
+            </div>
+          </div>
+        </div>
+      </footer>
+      <!-- @@include('html/first-layout.html', { })
+      @@include('html/num-section.html', { }) @@include('html/description.html',
+      { }) @@include('html/portfolio.html', { })
+      @@include('html/we-develop.html', { }) -->
       <!-- @@include('html/welcome.html', { }) @@include('html/last-news.html', { }) -->
     </main>
-      @@include('html/footer.html', { })
+    <!-- @@include('html/footer.html', { }) -->
+    @@include('./html/modals.html', { }) @@include('./html/script.html', { })
   </body>
 </html>

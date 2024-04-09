@@ -4,8 +4,9 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width,initial-scale=1">
-  <script src="https://api-maps.yandex.ru/2.1/?apikey=b345f0b0-60da-47eb-8188-9ee58f8dcfc3&amp;lang=ru_RU&_v=20231014124150"></script>
-  <link rel="stylesheet" href="css/style.min.css?_v=20231014124150">
+  <script src="https://api-maps.yandex.ru/2.1/?apikey=b345f0b0-60da-47eb-8188-9ee58f8dcfc3&amp;lang=ru_RU&_v=20240409203034"></script>
+  <link rel="stylesheet" href="css/style.min.css?_v=20240409203034">
+  <link rel="icon" href="./images/favicon.svg">
   <title>Главная</title>
 </head>
 
@@ -66,14 +67,14 @@
         </div>
         <div class="d-flex gap-10 mb-15 align-items-lg-center align-items-start fw-semi-bold mb-lg-30 p-15 p-lg-30" style="background-color: #F8EDE6;">
           <img class="flex-shrink-0" src="./images/attention.svg" alt="">
-          <p class="fw-semi-bold fs-6 fs-lg-5 mb-0">
+          <p class="mb-0 fs-6 fs-lg-5 fw-semi-bold">
             Бесплатный Гарантийный Ремонт с устранением заводских
             (производственных) дефектов распространяется для потребителей по
             договорам купли-продажи только на территории России.
           </p>
         </div>
         <div>
-          <span class="fs-7 fs-lg-spec fw-bold">Гарантийный ремонт осуществляется при соблюдении следующих
+          <span class="fw-bold fs-7 fs-lg-spec">Гарантийный ремонт осуществляется при соблюдении следующих
             условий:</span>
           <ul class="fs-7 fs-lg-6 mt-5">
             <li class="mb-5">правильное и четкое заполнение гарантийного талона;</li>
@@ -123,7 +124,7 @@
           </div>
           
           <div>
-            <span class="fs-7 fs-lg-spec fw-bold">ГАРАНТИИ ТАКЖЕ НЕ РАСПРОСТРАНЯЮТСЯ на изделия, вышедшие из строя в результате:</span>
+            <span class="fw-bold fs-7 fs-lg-spec">ГАРАНТИИ ТАКЖЕ НЕ РАСПРОСТРАНЯЮТСЯ на изделия, вышедшие из строя в результате:</span>
             <ul class="fs-7 fs-lg-6 mt-5">
                 <li class="mb-5 ispol-zovanija-tovara-ne-po-naznacheniju">
                     использования товара не по назначению;
@@ -548,47 +549,68 @@
 
 
 <div class="fade modal" id="formModal">
-  <div class="modal-dialog modal-dialog-centered modal-lg">
+  <div class="modal-dialog modal-dialog-centered modal-sm">
     <div class="bg-transparent border-0 modal-content">
-      <div class="bounce-block" style="padding: 0 20px 20px 0;">
-        <div class="bounce-block__wrapper bounce-block__wrapper--decorator bg-white" style="left: 20px; top: 20px;">
+      <div class="bg-white rounded-25" style="padding: 20px 30px 30px 20px">
+        <div class="d-flex justify-content-end">
+          <button type="button" class="btn-close text-black" data-bs-dismiss="modal" aria-label="Close"></button>
         </div>
-        <div class="bounce-block__wrapper bounce-block__wrapper--content">
-          <form class="form-modal">
-            <p class="form-modal__title">поработаем вместе?</p>
-            <input type="text" placeholder="ваше имя" class="form-modal__input">
-            <input type="text" placeholder="как с вами связаться" class="form-modal__input">
-            <textarea name="" placeholder="о вашем проекте" class="form-modal__input form-modal__input--textarea"></textarea>
-            <input type="text" placeholder="предполагаемый бюджет" class="form-modal__input">
-            <div class="d-flex justify-content-center">
-              <div type="submit" value="отправить" class="form-modal__submit-btn" data-bs-toggle="modal" data-bs-target="#modalThanx" data-bs-dismiss="modal">отправить</div>
-            </div>
-          </form>
+        <div class="mb-15 text-center">
+          <div class="mb-15">
+            <span class="fsc-20 fsc-lg-24">Сотрудничество с <span class="fw-bold">SIRIUS</span>
+            </span>
+          </div>
+          <p class="fsc-14 fsc-lg-16">
+            Направьте свой запрос на электронную почту
+            <br><br>
+            <a href="mailto:support@sirius.ru" style="color: #0056af">support@sirius.ru</a>
+            <br><br>
+            Мы ответим вам в течение 24 часов.
+          </p>
         </div>
-
+        <div class="d-flex justify-content-center">
+          <div class="btn-same-custom" data-bs-dismiss="modal" aria-label="Close">
+            Закрыть
+          </div>
+        </div>
       </div>
     </div>
-
-
   </div>
 </div>
 
-
-<div class="fade modal" id="modalThanx">
-  <div class="modal-dialog modal-dialog-centered modal-lg">
+<div class="fade modal" id="newModal">
+  <div class="modal-dialog modal-dialog-centered modal-sm">
     <div class="bg-transparent border-0 modal-content">
-      <div class="d-flex flex-column p-30 bg-white gap-30 rounded-15">
-        <span class="fs-3 text-secondary"> Спасибо!
-          <br> Мы свяжемся с Вами в ближайшее время</span>
-        <div class="form-modal__submit-btn text-center" data-bs-dismiss="modal">закрыть</div>
+      <div class="bg-white rounded-25" style="padding: 20px 30px 30px 20px">
+        <div class="d-flex justify-content-end">
+          <button type="button" class="btn-close text-black" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="mb-15 text-center">
+          <div class="mb-15">
+            <span class="fw-bold fsc-20 fsc-lg-24">ВНИМАНИЕ!</span>
+          </div>
+          <p class="fsc-14 fsc-lg-16 mb-30">
+            Регистрация в CRM СИРИУС откроется 01.02.2024 в 10:00 (мск).
+            Хотите получить уведомление первыми? Напишите нам "Хочу бесплатную
+            CRM" на почту
+            <br><br>
+            <a href="mailto:support@sirius.ru" style="color: #0056af">support@sirius.ru</a>
+            <br><br>
+            Как только регистрация в CRM откроется - вам сразу придет
+            уведомление.
+          </p>
+        </div>
+        <div class="d-flex justify-content-center">
+          <div class="btn-same-custom" data-bs-dismiss="modal" aria-label="Close">
+            Закрыть
+          </div>
+        </div>
       </div>
-
     </div>
-
-
   </div>
 </div>
-<script src="js/app.min.js?_v=20231014124150"></script>
+
+<script src="js/app.min.js?_v=20240409203034"></script>
 
   </body>
 </html>
