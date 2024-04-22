@@ -13,7 +13,6 @@ export const html = () => {
     ))
     .pipe(fileinclude())
     .pipe(app.plugins.replace(/@img\//g, 'images/'))
-    .pipe(app.plugins.if(app.isBuild, webpHtml()))
     .pipe(htmlMin({
       useShortDoctype: true,
       sortClassName: true,

@@ -9,11 +9,9 @@ import {
 
 import { Modal } from 'bootstrap'
 import Swiper, {
+  Autoplay,
   Navigation,
   Pagination,
-  Thumbs,
-  Controller,
-  Autoplay,
 } from 'swiper'
 
 let listNames = [
@@ -27,10 +25,10 @@ let listNames = [
 let mainSlider = new Swiper('.main-slider', {
   modules: [Navigation, Pagination, Autoplay],
   slidesPerView: 1,
-  loop: true,
   autoplay: {
-    delay: 10000,
+    delay: 5000,
   },
+  loop: true,
   navigation: {
     prevEl: '.prev-btn',
     nextEl: '.next-btn',

@@ -13,7 +13,6 @@
     "svgSprive": "gulp svgSprive",
     "deploy": "gh-pages -d dist",
     "predeploy": "npm run build"
-    
   },
   "keywords": [],
   "author": "",
